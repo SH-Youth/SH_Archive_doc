@@ -1,0 +1,787 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="cn" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Roles &#8212; 最変態no文章存档</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Sphinx_Notes/roles';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Directives" href="directives.html" />
+    <link rel="prev" title="reStructuredText+" href="reStructuredText%2B.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="cn"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">最変態no文章存档</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    欢迎来到最変態no文章存档
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">目录：</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Criticism_Space/index.html">批评空间</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Criticism_Space/Kira-Kira/index.html">KIRA☆KIRA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Criticism_Space/YU-NO/index.html">在世界尽头咏唱恋曲的少女YU-NO</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Sphinx 速查笔记</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="reStructuredText%2B.html">reStructuredText+</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="directives.html">Directives</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Stone/index.html">别的山上的石头</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Stone/anime_pic_imperfections/index.html">动漫视频常见的瑕疵/缺陷介绍</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/SH-Youth/SH_Archive_src" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/SH-Youth/SH_Archive_src/edit/main/Sphinx_Notes/roles.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Sphinx_Notes/roles.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Roles</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-code-highlighting">Inline code highlighting</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematics">Mathematics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#raw">Raw</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-references">Cross-references</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">交叉引用任意位置</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">交叉引用文件</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">图号对照图</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">引用可下载文件</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">其他语义标记</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="roles">
+<h1>Roles<a class="headerlink" href="#roles" title="Permalink to this heading">#</a></h1>
+<p>A role or &quot;custom interpreted text role&quot; is an inline
+piece of explicit markup. It signifies that the enclosed text should be
+interpreted in a specific way.  Sphinx uses this to provide semantic markup and
+cross-referencing of identifiers, as described in the appropriate section.  The
+general syntax is <code class="docutils literal notranslate"><span class="pre">:rolename:`content`</span></code>.</p>
+<p>Docutils supports the following roles:</p>
+<ul class="simple">
+<li><p><cite>emphasis</cite> -- equivalent of <code class="docutils literal notranslate"><span class="pre">*emphasis*</span></code></p></li>
+<li><p><cite>strong</cite> -- equivalent of <code class="docutils literal notranslate"><span class="pre">**strong**</span></code></p></li>
+<li><p><cite>literal</cite> -- equivalent of <code class="docutils literal notranslate"><span class="pre">``literal``</span></code></p></li>
+<li><p><cite>subscript</cite> -- subscript text</p></li>
+<li><p><cite>superscript</cite> -- superscript text</p></li>
+<li><p><cite>title-reference</cite> -- for titles of books, periodicals, and other materials</p></li>
+</ul>
+<dl>
+<dt>上下标</dt><dd><p>例如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>H\ :sub:`2` O
+E = mc\ :sup:`2`
+</pre></div>
+</div>
+<p>效果:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">H<sub>2</sub> O</div>
+<div class="line">E = mc<sup>2</sup></div>
+</div>
+</div></blockquote>
+</dd>
+<dt>解释性文本角色</dt><dd><p>即一对单反引号所包括的文本角色。它默认指 <code class="docutils literal notranslate"><span class="pre">title</span> <span class="pre">references</span></code> ，
+但可以用一个 <cite>default-role</cite> 指令更改它在接下来的文本处理中的行为:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. default-role:: math
+
+现在是数学角色了： `\LaTeX`
+
+.. default-role:: literal
+
+`现在是字面量了`
+</pre></div>
+</div>
+<p>现在是数学角色了： <span class="math notranslate nohighlight">\(\LaTeX\)</span></p>
+<p><code class="docutils literal notranslate"><span class="pre">现在是字面量了</span></code></p>
+</dd>
+</dl>
+<section id="inline-code-highlighting">
+<h2>Inline code highlighting<a class="headerlink" href="#inline-code-highlighting" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">:code:</span></code></dt><dd><p>An inline code example. When used directly, this role just displays the text without syntax highlighting, as a literal.</p>
+<p>Unlike the code-block directive, this role does not respect the default language set by the highlight directive.</p>
+<p>To display a multi-line code example, use the code-block directive instead.</p>
+<p><code class="docutils literal notranslate"><span class="pre">code</span></code> 角色:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>:code:`println!(&quot;{}&quot;, 8usize)`
+</pre></div>
+</div>
+<dl class="simple">
+<dt>效果：</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">println!(&quot;{}&quot;,</span> <span class="pre">8usize)</span></code></p>
+</dd>
+</dl>
+<p>默认的代码角色是回退到 literal 的，没有高亮，
+可以通过 role 指令创建新的代码角色以启用高亮:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. role:: python(code)
+    :language: python
+
+In Python, :python:`1 + 2` is equal to :python:`3`.
+</pre></div>
+</div>
+<dl class="simple">
+<dt>效果:</dt><dd><p>In Python, <code class="code highlight python docutils literal highlight-python"><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span></code> is equal to <code class="code highlight python docutils literal highlight-python"><span class="mi">3</span></code>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<section id="mathematics">
+<span id="rst-role-math"></span><h3>Mathematics<a class="headerlink" href="#mathematics" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">:math:</span></code></dt><dd><p>This role is used to display mathematical notation. It is equivalent to the math directive.</p>
+<p>根据生成器的配置，可能使用 MathJax, KaTeX 渲染，
+或者使用本地 LaTeX 编译成 SVG 嵌入。</p>
+<p>这个得看生成器的配置，docutils 只管语义表达。
+Sphinx 默认使用 MathJax，但是推荐使用以下设置配置成 <span class="math notranslate nohighlight">\(\KaTeX\)</span>，
+比前者性能高出不少。
+例如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>The Pythagorean theorem is expressed as :math:`a^2 + b^2 = c^2`.
+</pre></div>
+</div>
+<dl class="simple">
+<dt>效果:</dt><dd><p>The Pythagorean theorem is expressed as <span class="math notranslate nohighlight">\(a^2 + b^2 = c^2\)</span>.</p>
+</dd>
+</dl>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:eq:</span></code></dt><dd><p>Same as <code class="docutils literal notranslate"><span class="pre">math:numref</span></code>.</p>
+<p>例如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">math</span><span class="p">::</span> <span class="n">e</span><span class="o">^</span><span class="p">{</span><span class="n">i</span>\<span class="n">pi</span><span class="p">}</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="p">:</span><span class="n">label</span><span class="p">:</span> <span class="n">euler</span>
+
+<span class="n">Euler</span><span class="s1">&#39;s identity, equation :math:numref:`euler`, was elected one of the</span>
+<span class="n">most</span> <span class="n">beautiful</span> <span class="n">mathematical</span> <span class="n">formulas</span><span class="o">.</span>
+</pre></div>
+</div>
+<dl>
+<dt>效果：</dt><dd><div class="math notranslate nohighlight" id="equation-euler">
+<span class="eqno">(1)<a class="headerlink" href="#equation-euler" title="Permalink to this equation">#</a></span>\[e^{i\pi} + 1 = 0\]</div>
+<p>Euler's identity, equation <a class="reference internal" href="#equation-euler">(1)</a>, was elected one of the
+most beautiful mathematical formulas.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="raw">
+<span id="rst-role-raw"></span><h3>Raw<a class="headerlink" href="#raw" title="Permalink to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">raw</span></code> 角色，表示将内容原封不动地传递给输出。
+这个角色不能直接使用，而是使用 <code class="docutils literal notranslate"><span class="pre">role</span></code> 指令定义一个新角色，并指定输出格式:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">role</span><span class="p">::</span> <span class="n">html</span><span class="p">(</span><span class="n">raw</span><span class="p">)</span>
+    <span class="p">:</span><span class="nb">format</span><span class="p">:</span> <span class="n">html</span>
+</pre></div>
+</div>
+<p>这样，将会限制其只在 html 输出格式下以原始文本渲染该角色的内容，而在其他输出格式下，将如同注释一般不会渲染。</p>
+<p>例如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. role:: raw-html(raw)
+    :format: html
+
+.. role:: raw-latex(raw)
+    :format: latex
+
+在 HTML 中，将会渲染
+:raw-html:`&lt;ruby&gt;&lt;rb&gt;拼&lt;/rb&gt;&lt;rt&gt;pin&lt;/rt&gt;&lt;rb&gt;音&lt;/rb&gt;&lt;rt&gt;yin&lt;/rt&gt;&lt;/ruby&gt;`，
+而 :raw-latex:`怎么做哦` 应该是不会在 HTML 输出中渲染的。
+</pre></div>
+</div>
+<p>在 HTML 中，将会渲染
+<span class="raw-html"><ruby><rb>拼</rb><rt>pin</rt><rb>音</rb><rt>yin</rt></ruby></span>，
+而  应该是不会在 HTML 输出中渲染的。</p>
+<p>另外可参考 <a class="reference internal" href="directives.html#rst-directive-raw"><span class="std std-ref">Raw</span></a> 指令。</p>
+</section>
+</section>
+<section id="cross-references">
+<h2>Cross-references<a class="headerlink" href="#cross-references" title="Permalink to this heading">#</a></h2>
+<section id="id1">
+<h3>交叉引用任意位置<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">:ref:</span></code></dt><dd><p>To support cross-referencing to arbitrary locations in any document, the standard reStructuredText labels are used. For this to work label names must be unique throughout the entire documentation. There are two ways in which you can refer to labels:</p>
+<ol class="arabic">
+<li><p>如果将标签直接放在节标题之前，则可以使用 <code class="docutils literal notranslate"><span class="pre">:ref:`label</span> <span class="pre">name`</span></code> 来引用它。例如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. _my-reference-label:
+
+Section to cross-reference
+--------------------------
+
+This is the text of the section.
+
+It refers to the section itself, see :ref:`my-reference-label`.
+</pre></div>
+</div>
+<p>然后， <code class="docutils literal notranslate"><span class="pre">:ref:</span></code> 角色将生成一个到节的链接，链接标题为“要交叉引用的节”。当节和引用位于不同的源文件中时，这种方法同样有效。</p>
+<p>自动标签也适用于图形。例如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">_my</span><span class="o">-</span><span class="n">figure</span><span class="p">:</span>
+
+<span class="o">..</span> <span class="n">figure</span><span class="p">::</span> <span class="n">whatever</span>
+
+   <span class="n">Figure</span> <span class="n">caption</span>
+</pre></div>
+</div>
+<p>在这种情况下，引用 <code class="docutils literal notranslate"><span class="pre">my-figure</span></code> 会插入一个引用到图，链接文本为“figure caption”。</p>
+</li>
+<li><p>没有放在节标题之前的标签仍然可以被引用，但是必须给链接一个显式的标题，使用以下语法：“Link title”。例如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. _label name:
+
+I love rst.
+
+Yeap, I know :ref:`Link title &lt;label name&gt;`.
+</pre></div>
+</div>
+<p id="label-name">I love rst.</p>
+<p>Yeap, I know <a class="reference internal" href="#label-name"><span class="std std-ref">Link title</span></a>.</p>
+</li>
+</ol>
+</dd>
+</dl>
+</section>
+<section id="id2">
+<h3>交叉引用文件<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">:doc:</span></code></dt><dd><p>角色用于链接到指定的文档，可以使用绝对路径或相对路径来指定文档名称。</p>
+<ol class="arabic simple">
+<li><p><strong>绝对路径引用</strong>：
+<code class="docutils literal notranslate"><span class="pre">:doc:`/absolute/path/to/document`</span></code></p></li>
+<li><p><strong>相对路径引用</strong>：
+<code class="docutils literal notranslate"><span class="pre">:doc:`relative/path/to/document`</span></code></p></li>
+</ol>
+<p><strong>示例用法:</strong></p>
+<p>假设你有以下目录结构:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">docs</span>
+    <span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">rst</span>
+    <span class="o">/</span><span class="n">section</span>
+        <span class="o">/</span><span class="n">subsection</span>
+            <span class="o">/</span><span class="n">target</span><span class="o">.</span><span class="n">rst</span>
+</pre></div>
+</div>
+<p>在 <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> 中引用 <code class="docutils literal notranslate"><span class="pre">target.rst</span></code>：
+<code class="docutils literal notranslate"><span class="pre">:doc:`/section/subsection/target``</span></code></p>
+<p>在 <code class="docutils literal notranslate"><span class="pre">section/subsection/another.rst</span></code> 中引用 <code class="docutils literal notranslate"><span class="pre">target.rst</span></code>：
+<code class="docutils literal notranslate"><span class="pre">:doc:`target``</span></code></p>
+<p>如果没有给出明确的链接文本，链接标题将是目标文档的标题。要给出明确的链接文本，可以使用以下语法:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>:doc:`Link title &lt;/path/to/document&gt;`
+</pre></div>
+</div>
+</dd>
+</dl>
+</section>
+<section id="id3">
+<h3>图号对照图<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">:numref:</span></code></dt><dd><p>角色用于生成带编号的引用，通常用于引用图表、表格、代码块等带编号的元素。</p>
+<p>示例用法</p>
+<p>假设你有一个带编号的图表:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">_my</span><span class="o">-</span><span class="n">figure</span><span class="p">:</span>
+
+<span class="o">..</span> <span class="n">figure</span><span class="p">::</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">image</span><span class="o">.</span><span class="n">png</span>
+    <span class="p">:</span><span class="n">alt</span><span class="p">:</span> <span class="n">My</span> <span class="n">Figure</span>
+
+    <span class="n">Figure</span> <span class="n">caption</span>
+</pre></div>
+</div>
+<p>你可以使用 <code class="docutils literal notranslate"><span class="pre">:numref:</span></code> 来引用这个图表:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>See :numref:`Figure &lt;my-figure&gt;`.
+</pre></div>
+</div>
+<p>这样会生成一个带编号的引用，链接文本为 &quot;Figure 1&quot;（假设这是文档中的第一个图表）。</p>
+</dd>
+</dl>
+</section>
+<section id="id4">
+<h3>引用可下载文件<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">:download:</span></code></dt><dd><p>当您使用此角色时，被引用的文件将自动标记为在生成时包含在输出中（显然，仅用于HTML输出）。所有可下载的文件都放在输出目录的 <code class="docutils literal notranslate"><span class="pre">_downloads/&lt;unique</span> <span class="pre">hash&gt;/</span></code> 子目录中；处理重复的文件名。</p>
+<p>例如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>See :download:`this example script &lt;../example.py&gt;`.
+</pre></div>
+</div>
+<p>给定的文件名通常是相对于当前源文件所在的目录的，但是如果是绝对的（以 <code class="docutils literal notranslate"><span class="pre">/</span></code> 开头），则将其视为相对于顶级源目录的文件名。</p>
+<p>在 <code class="docutils literal notranslate"><span class="pre">example.py</span></code> 文件将被复制到输出目录，并为其生成适当的链接。</p>
+<p>若要不显示不可用的下载链接，应将具有此角色的整个段落换行:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. only:: builder_html
+
+    See :download:`this example script &lt;../example.py&gt;`.
+</pre></div>
+</div>
+</dd>
+</dl>
+</section>
+<section id="id5">
+<h3>其他语义标记<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<p>以下角色除了以不同的样式格式化文本外，不会执行任何特殊操作：</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">:abbr:</span></code></dt><dd><p>缩写。如果角色内容包含带圆括号的解释，则将对其进行特殊处理：它将在HTML的工具提示中显示，在LaTeX中仅输出一次。</p>
+<p>例如: <code class="docutils literal notranslate"><span class="pre">:abbr:`LIFO</span> <span class="pre">(last-in,</span> <span class="pre">first-out)`</span></code> ，效果: <abbr title="last-in, first-out">LIFO</abbr>。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:file:</span></code></dt><dd><p>角色用于创建指向文件的超链接。示例用法：</p>
+<p>假设你有一个文件 <code class="docutils literal notranslate"><span class="pre">example.txt</span></code>，你可以这样引用它:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>See the file :file:`example.txt` for more details.
+</pre></div>
+</div>
+<p>如果你想给链接一个明确的标题，可以使用以下语法:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>See the :file:`example file &lt;example.txt&gt;` for more details.
+</pre></div>
+</div>
+<p>这样会生成一个链接，链接文本为 &quot;example file&quot;，指向 <code class="docutils literal notranslate"><span class="pre">example.txt</span></code> 文件。</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="reStructuredText%2B.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">reStructuredText+</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="directives.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Directives</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-code-highlighting">Inline code highlighting</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematics">Mathematics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#raw">Raw</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-references">Cross-references</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">交叉引用任意位置</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">交叉引用文件</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">图号对照图</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">引用可下载文件</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">其他语义标记</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By SH_Youth
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, SH_Youth.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

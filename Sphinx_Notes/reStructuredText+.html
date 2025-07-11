@@ -1,0 +1,1320 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="cn" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>reStructuredText+ &#8212; 最変態no文章存档</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Sphinx_Notes/reStructuredText+';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Roles" href="roles.html" />
+    <link rel="prev" title="Sphinx 速查笔记" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="cn"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">最変態no文章存档</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    欢迎来到最変態no文章存档
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">目录：</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Criticism_Space/index.html">批评空间</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Criticism_Space/Kira-Kira/index.html">KIRA☆KIRA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Criticism_Space/YU-NO/index.html">在世界尽头咏唱恋曲的少女YU-NO</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Sphinx 速查笔记</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">reStructuredText+</a></li>
+<li class="toctree-l2"><a class="reference internal" href="roles.html">Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="directives.html">Directives</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Stone/index.html">别的山上的石头</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Stone/anime_pic_imperfections/index.html">动漫视频常见的瑕疵/缺陷介绍</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/SH-Youth/SH_Archive_src" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/SH-Youth/SH_Archive_src/edit/main/Sphinx_Notes/reStructuredText+.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Sphinx_Notes/reStructuredText+.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>reStructuredText+</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paragraphs">Paragraphs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-markup">Inline markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#literal-blocks">Literal blocks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doctest-blocks">Doctest blocks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tables">Tables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hyperlinks">Hyperlinks</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#external-links">External links</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#internal-links">Internal links</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sections">Sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#field-lists">Field Lists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pictures">Pictures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#footnotes">Footnotes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#admonitions">Admonitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-metadata">HTML Metadata</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="restructuredtext">
+<span id="id1"></span><h1>reStructuredText+<a class="headerlink" href="#restructuredtext" title="Permalink to this heading">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>并非只是reStructuredText，这一章还包含了一些常用Sphinx的特色，比如指令和角色。</p>
+</div>
+<section id="paragraphs">
+<h2>Paragraphs<a class="headerlink" href="#paragraphs" title="Permalink to this heading">#</a></h2>
+<p>The paragraph is the most basic block
+in a reStructuredText document.
+Paragraphs are simply chunks of text separated by one or more blank lines.
+As in Python, indentation is significant in reStructuredText,
+so all lines of the same paragraph must be left-aligned
+to the same level of indentation.</p>
+</section>
+<section id="inline-markup">
+<h2>Inline markup<a class="headerlink" href="#inline-markup" title="Permalink to this heading">#</a></h2>
+<ul>
+<li><dl class="simple">
+<dt>one asterisk: <code class="docutils literal notranslate"><span class="pre">*text*</span></code> for emphasis (italics),</dt><dd><p>实际上是 <cite>emphasis</cite> 角色 <code class="docutils literal notranslate"><span class="pre">:emphasis:`text`</span></code></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>two asterisks: <code class="docutils literal notranslate"><span class="pre">**text**</span></code> for strong emphasis (boldface),</dt><dd><p>实际上是 <cite>strong</cite> 角色 <code class="docutils literal notranslate"><span class="pre">:strong:`text`</span></code></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>backquotes: <code class="docutils literal notranslate"><span class="pre">``text``</span></code> for code samples (literal),</dt><dd><p>实际上是 <cite>literal</cite> 角色 <code class="docutils literal notranslate"><span class="pre">:literal:`text`</span></code></p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>backquote: <code class="docutils literal notranslate"><span class="pre">`text`</span></code> for title references (italics),</dt><dd><p>实际上是 <code class="docutils literal notranslate"><span class="pre">title-reference</span></code> 角色，别名 <code class="docutils literal notranslate"><span class="pre">title</span></code> , <code class="docutils literal notranslate"><span class="pre">:title:`text</span></code></p>
+<p>也是解释性文本角色，可用 <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">default-role::</span></code> 指令来更改其含义。</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>效果:</p>
+<blockquote>
+<div><p><em>text</em>
+<strong>text</strong>
+<code class="docutils literal notranslate"><span class="pre">text</span></code>
+<cite>text</cite></p>
+</div></blockquote>
+<p>如果文本中的星号或者反单引号可能被混淆为行内标记分隔符，添加反斜杠转义即可。
+注意，这些标记有些功能限制：</p>
+<ul class="simple">
+<li><p>不能嵌套，</p></li>
+<li><p>标记内不能以空格开始： <code class="docutils literal notranslate"><span class="pre">*</span> <span class="pre">文本*</span></code> 就不行，</p></li>
+<li><p>行内标记符号外只能是非文字字符。想写空格的话就要转义： <code class="docutils literal notranslate"><span class="pre">thisis\</span> <span class="pre">*one*\</span> <span class="pre">word</span></code></p></li>
+</ul>
+</section>
+<section id="lists">
+<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this heading">#</a></h2>
+<p>有三种风格来表示一列项目。无序列表用 <cite>*</cite>, <cite>-</cite>, <cite>+</cite> 做项目符号，
+有序列表可以用 数字、字母、罗马数字 加上 点（<cite>.</cite>）、右英文括号（<cite>)</cite>）或用英文括号完全包围 -- 无论你偏好什么，都能识别:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span>   <span class="n">无序</span> <span class="mi">1</span>
+
+<span class="o">-</span>   <span class="n">无序</span> <span class="mi">2</span>
+
+<span class="o">+</span>   <span class="n">无序</span> <span class="mi">3</span>
+
+<span class="mf">1.</span>  <span class="n">有序</span> <span class="mi">1</span>
+
+<span class="mi">2</span><span class="p">)</span>  <span class="n">有序</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="n">有序</span> <span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">i</span><span class="o">.</span>  <span class="n">有序</span> <span class="n">一</span>
+
+<span class="n">II</span><span class="o">.</span>  <span class="n">有序</span> <span class="n">贰</span>
+
+<span class="n">c</span><span class="o">.</span>  <span class="n">有序</span> <span class="n">three</span>
+</pre></div>
+</div>
+<p>效果：</p>
+<ul class="simple">
+<li><p>无序 1</p></li>
+</ul>
+<ul class="simple">
+<li><p>无序 2</p></li>
+</ul>
+<ul class="simple">
+<li><p>无序 3</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>有序 1</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>有序 2)</p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>有序 (3)</p></li>
+</ol>
+<ol class="lowerroman simple">
+<li><p>有序 一</p></li>
+</ol>
+<ol class="upperroman simple" start="2">
+<li><p>有序 贰</p></li>
+</ol>
+<ol class="loweralpha simple" start="3">
+<li><p>有序 three</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>无序列表的项目符号可以混用，只需要保持缩进即可。</p>
+<p>但有序列表的项目符号不可混用，并且需要保持编号连续且单调。
+不过，你可以使用 <cite>#</cite> 符号来进行编号的自动推导:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.</span> <span class="n">第一项</span>
+<span class="c1">#. 第二</span>
+<span class="c1">#. 第三</span>
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>第一项</p></li>
+<li><p>第二</p></li>
+<li><p>第三</p></li>
+</ol>
+</div>
+<p>也可以嵌套列表，但注意它们必须通过空行与父列表项分开:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span>   <span class="n">this</span> <span class="ow">is</span>
+<span class="o">*</span>   <span class="n">a</span> <span class="nb">list</span>
+
+    <span class="mf">1.</span> <span class="k">with</span> <span class="n">a</span> <span class="n">nested</span> <span class="nb">list</span>
+    <span class="c1">#. and some subitems</span>
+
+<span class="o">*</span>   <span class="ow">and</span> <span class="n">here</span> <span class="n">the</span> <span class="n">parent</span> <span class="nb">list</span> <span class="n">continues</span>
+</pre></div>
+</div>
+<p>定义列表创建如下:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">term</span> <span class="p">(</span><span class="n">up</span> <span class="n">to</span> <span class="n">a</span> <span class="n">line</span> <span class="n">of</span> <span class="n">text</span><span class="p">)</span>
+   <span class="n">Definition</span> <span class="n">of</span> <span class="n">the</span> <span class="n">term</span><span class="p">,</span> <span class="n">which</span> <span class="n">must</span> <span class="n">be</span> <span class="n">indented</span>
+
+   <span class="ow">and</span> <span class="n">can</span> <span class="n">even</span> <span class="n">consist</span> <span class="n">of</span> <span class="n">multiple</span> <span class="n">paragraphs</span>
+
+<span class="nb">next</span> <span class="n">term</span>
+   <span class="n">Description</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>效果:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>term (up to a line of text)</dt><dd><p>Definition of the term, which must be indente
+and can even consist of multiple paragraphs</p>
+</dd>
+<dt>next term</dt><dd><p>Description.</p>
+</dd>
+</dl>
+<p>Note that the term cannot have more than one line of text.</p>
+</div></blockquote>
+<p>请注意，一个术语可以有很多段，段与段之间用空行分隔，但一段只能有一行文本。</p>
+<p>引用的段落只是通过缩进它们来创建，而不是根据周围的段落创建。</p>
+<p>行块是一种保留换行符的方法:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span> <span class="n">These</span> <span class="n">lines</span> <span class="n">are</span>
+<span class="o">|</span> <span class="n">broken</span> <span class="n">exactly</span> <span class="n">like</span> <span class="ow">in</span>
+<span class="o">|</span> <span class="n">the</span> <span class="n">source</span> <span class="n">file</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>效果:</p>
+<div class="line-block">
+<div class="line">These lines are</div>
+<div class="line">broken exactly like in</div>
+<div class="line">the source file.</div>
+</div>
+</section>
+<section id="literal-blocks">
+<span id="rst-literal-blocks"></span><h2>Literal blocks<a class="headerlink" href="#literal-blocks" title="Permalink to this heading">#</a></h2>
+<p>文字代码块是通过在段落结束时使用特殊标记“::”来引入的。
+文字块必须缩进（和所有段落一样，用空行隔开周围的段落）:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">normal</span> <span class="n">text</span> <span class="n">paragraph</span><span class="o">.</span> <span class="n">The</span> <span class="nb">next</span> <span class="n">paragraph</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">code</span> <span class="n">sample</span><span class="p">::</span>
+
+   <span class="n">It</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">processed</span> <span class="ow">in</span> <span class="nb">any</span> <span class="n">way</span><span class="p">,</span> <span class="k">except</span>
+   <span class="n">that</span> <span class="n">the</span> <span class="n">indentation</span> <span class="ow">is</span> <span class="n">removed</span><span class="o">.</span>
+
+   <span class="n">It</span> <span class="n">can</span> <span class="n">span</span> <span class="n">multiple</span> <span class="n">lines</span><span class="o">.</span>
+
+<span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">normal</span> <span class="n">text</span> <span class="n">paragraph</span> <span class="n">again</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>效果:</p>
+<p>This is a normal text paragraph. The next paragraph is a code sample:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">It</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">processed</span> <span class="ow">in</span> <span class="nb">any</span> <span class="n">way</span><span class="p">,</span> <span class="k">except</span>
+<span class="n">that</span> <span class="n">the</span> <span class="n">indentation</span> <span class="ow">is</span> <span class="n">removed</span><span class="o">.</span>
+
+<span class="n">It</span> <span class="n">can</span> <span class="n">span</span> <span class="n">multiple</span> <span class="n">lines</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>This is a normal text paragraph again.</p>
+<p>“::”标记的处理很灵活：</p>
+<ul class="simple">
+<li><p>如果它作为一个单独的段落出现，那么该段落将完全从文档中删除。</p></li>
+<li><p>如果前面有空格，则删除该标记。</p></li>
+<li><p>如果前面有非空格，则该标记将被单个冒号替换。</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>关于文字块中的代码高亮，见 <a class="reference internal" href="directives.html#rst-showing-code"><span class="std std-ref">highlight</span></a></p>
+</div>
+</section>
+<section id="doctest-blocks">
+<span id="rst-doctest-blocks"></span><h2>Doctest blocks<a class="headerlink" href="#doctest-blocks" title="Permalink to this heading">#</a></h2>
+<p>Doctest块是将交互式的Python会话剪切粘贴到文档字符串中。它们不需要
+<a class="reference internal" href="#rst-literal-blocks"><span class="std std-ref">literal blocks</span></a> 语法。
+doctest 块必须以空行结束，并且 <em>不</em> 以未使用的提示符结束:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="go">2</span>
+</pre></div>
+</div>
+<p>效果:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="go">2</span>
+</pre></div>
+</div>
+</section>
+<section id="tables">
+<h2>Tables<a class="headerlink" href="#tables" title="Permalink to this heading">#</a></h2>
+<p>对于网格式表格，你必须自己“绘制”单元格网格。它们是这样的:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">+------------------------+------------+----------+----------+</span>
+<span class="o">|</span> <span class="n">Header</span> <span class="n">row</span><span class="p">,</span> <span class="n">column</span> <span class="mi">1</span>   <span class="o">|</span> <span class="n">Header</span> <span class="mi">2</span>   <span class="o">|</span> <span class="n">Header</span> <span class="mi">3</span> <span class="o">|</span> <span class="n">Header</span> <span class="mi">4</span> <span class="o">|</span>
+<span class="o">|</span> <span class="p">(</span><span class="n">header</span> <span class="n">rows</span> <span class="n">optional</span><span class="p">)</span> <span class="o">|</span>            <span class="o">|</span>          <span class="o">|</span>          <span class="o">|</span>
+<span class="o">+========================+============+==========+==========+</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">1</span><span class="p">,</span> <span class="n">column</span> <span class="mi">1</span>   <span class="o">|</span> <span class="n">column</span> <span class="mi">2</span>   <span class="o">|</span> <span class="n">column</span> <span class="mi">3</span> <span class="o">|</span> <span class="n">column</span> <span class="mi">4</span> <span class="o">|</span>
+<span class="o">+------------------------+------------+----------+----------+</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">2</span>             <span class="o">|</span> <span class="o">...</span>        <span class="o">|</span> <span class="o">...</span>      <span class="o">|</span>          <span class="o">|</span>
+<span class="o">+------------------------+------------+----------+----------+</span>
+</pre></div>
+</div>
+<p>效果:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Header row, column 1
+(header rows optional)</p></th>
+<th class="head"><p>Header 2</p></th>
+<th class="head"><p>Header 3</p></th>
+<th class="head"><p>Header 4</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>body row 1, column 1</p></td>
+<td><p>column 2</p></td>
+<td><p>column 3</p></td>
+<td><p>column 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>body row 2</p></td>
+<td><p>...</p></td>
+<td><p>...</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>简单表格更容易撰写，但有限制：它们必须包含不止一行，第一列单元格不能包含多行。如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=====</span>  <span class="o">=====</span>  <span class="o">=======</span>
+<span class="n">A</span>      <span class="n">B</span>      <span class="n">A</span> <span class="ow">and</span> <span class="n">B</span>
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">=======</span>
+<span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>
+<span class="kc">True</span>   <span class="kc">False</span>  <span class="kc">False</span>
+<span class="kc">False</span>  <span class="kc">True</span>   <span class="kc">False</span>
+<span class="kc">True</span>   <span class="kc">True</span>   <span class="kc">True</span>
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">=======</span>
+</pre></div>
+</div>
+<p>效果:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>A and B</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>除了网格式和简单式的表格之外，还可以使用 <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#csv-table">list-table</a>
+或 <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#csv-table">csv-table</a>
+来创建表格， 和前两种相比，后两种比较不美观，但是不需要做 “字符画” 了。</p>
+<p><strong>CSV Table 例子</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. csv-table:: Frozen Delights!
+:header: &quot;Treat&quot;, &quot;Quantity&quot;, &quot;Description&quot;
+:widths: 15, 10, 30
+
+&quot;Albatross&quot;, 2.99, &quot;On a stick!&quot;
+&quot;Crunchy Frog&quot;, 1.49, &quot;If we took the bones out,
+it wouldn&#39;t be crunchy, now would it?&quot;
+&quot;Gannet Ripple&quot;, 1.99, &quot;On a stick!&quot;
+</pre></div>
+</div>
+<p>以下选项可被识别：</p>
+<dl>
+<dt>widths</dt><dd><p>auto 或一组整数，设置列宽。默认每列一致。</p>
+</dd>
+<dt>width</dt><dd><p>整体的宽度。</p>
+</dd>
+<dt>header-rows</dt><dd><p>整数，表示接下来的 CSV 数据中前几行为表头。默认 0.</p>
+</dd>
+<dt>header</dt><dd><p>一列 CSV 内容，用作表头。将插入到 header-rows 所设定的行前面。</p>
+</dd>
+<dt>stub-columns</dt><dd><p>整数，表示 CSV 数据中左几列为存根。默认 0.</p>
+</dd>
+<dt>file</dt><dd><p>从文件系统读取 CSV 数据。</p>
+</dd>
+<dt>url</dt><dd><p>从网络地址读取 CSV 数据。</p>
+</dd>
+<dt>encoding</dt><dd><p>设置外部 CSV 数据的字符编码。默认和当前文档相同。</p>
+</dd>
+<dt>delim</dt><dd><p>分隔符，默认逗号 <code class="docutils literal notranslate"><span class="pre">,</span></code> 。</p>
+</dd>
+<dt>quote</dt><dd><p>括号，用来包括表格中的单元。默认双引号 <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> 。</p>
+</dd>
+<dt>keepspace</dt><dd><p>保留分隔符旁的空白。默认忽略。</p>
+</dd>
+<dt>escape</dt><dd><p>转义符号。默认是将需要转义的字符重复两遍:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;He said, &quot;&quot;Hi!&quot;&quot;, and go away.&quot;</span>
+</pre></div>
+</div>
+</dd>
+<dt>align</dt><dd><p>水平对齐方式。</p>
+</dd>
+</dl>
+<p><strong>List Table 例子</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="nb">list</span><span class="o">-</span><span class="n">table</span><span class="p">::</span>
+
+    <span class="o">*</span>   <span class="o">-</span>   <span class="n">表头1</span>
+        <span class="o">-</span>   <span class="n">表头2</span>
+        <span class="o">-</span>   <span class="n">表头3</span>
+    <span class="o">*</span>   <span class="o">-</span>   <span class="n">内容11</span>
+        <span class="o">-</span>   <span class="n">内容12</span>
+        <span class="o">-</span>   <span class="n">内容13</span>
+    <span class="o">*</span>   <span class="o">-</span>   <span class="n">内容21</span>
+        <span class="o">-</span>   <span class="n">内容22</span>
+        <span class="o">-</span>   <span class="n">内容23</span>
+</pre></div>
+</div>
+<p>用列表的形式来创建表格。 列表的顶级项表示一行，次级项表示一行的各元素。</p>
+<p>效果：</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>表头1</p></td>
+<td><p>表头2</p></td>
+<td><p>表头3</p></td>
+</tr>
+<tr class="row-even"><td><p>内容11</p></td>
+<td><p>内容12</p></td>
+<td><p>内容13</p></td>
+</tr>
+<tr class="row-odd"><td><p>内容21</p></td>
+<td><p>内容22</p></td>
+<td><p>内容23</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="hyperlinks">
+<h2>Hyperlinks<a class="headerlink" href="#hyperlinks" title="Permalink to this heading">#</a></h2>
+<p>一个超链接需要有两个部分：引用和靶标:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>引用部分需要在名称后加下划线：链接_
+如果名称中包含了空格，则需要用反引号包括起来：`链 接`_。
+
+靶标部分的下划线在名称前面：
+
+.. _链接: https://docutils.sourceforge.io/docs/user/rst/quickref.html
+
+如果留空，则会将靶标引至下一个块元素。
+</pre></div>
+</div>
+<section id="external-links">
+<h3>External links<a class="headerlink" href="#external-links" title="Permalink to this heading">#</a></h3>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">`Link</span> <span class="pre">text</span> <span class="pre">&lt;https://domain.invalid/&gt;`_</span></code> 进行行内网络链接，这是比引用和标靶写在同一位置的写法。</p>
+<p>效果:
+<a class="reference external" href="https://domain.invalid/">Link text</a></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>链接文本与 URL 前面的 &lt; 之间必须有空格。</p>
+</div>
+<p>也可以把引用和标靶分开，就像这样:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>This is a paragraph that contains `a link`_.
+
+.. _a link: https://domain.invalid/
+</pre></div>
+</div>
+<p>效果:
+This is a paragraph that contains <a class="reference external" href="https://domain.invalid/">a link</a>.</p>
+<p>如果链接文本应该是Web地址，则根本不需要特殊标记，解析器会在普通文本中查找链接和邮件地址，任何满足 Uri 形式的文本会在渲染流程的最后被识别为超链接:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span>   <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">docutils</span><span class="o">.</span><span class="n">sourceforge</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">rst</span><span class="o">/</span><span class="n">quickref</span><span class="o">.</span><span class="n">html</span><span class="c1">#hyperlink-targets</span>
+<span class="o">-</span>   <span class="n">ftp</span><span class="p">:</span><span class="o">//</span><span class="n">firefox</span><span class="o">.</span><span class="n">fake</span><span class="o">-</span><span class="n">mozilla</span><span class="o">.</span><span class="n">org</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>效果：</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html#hyperlink-targets">https://docutils.sourceforge.io/docs/user/rst/quickref.html#hyperlink-targets</a></p></li>
+<li><p><a class="reference external" href="ftp://firefox.fake-mozilla.org/">ftp://firefox.fake-mozilla.org/</a></p></li>
+</ul>
+</section>
+<section id="internal-links">
+<h3>Internal links<a class="headerlink" href="#internal-links" title="Permalink to this heading">#</a></h3>
+<p>靶标也有内联形式，例如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>_`靶标` 在这里，而引用将会引至前面的 靶标_ 处。
+</pre></div>
+</div>
+<p><span class="target" id="id2">靶标</span> 在这里，而引用将会引至前面的 <a class="reference internal" href="#id2">靶标</a> 处。</p>
+<p>隐式超链接可以将引用引至标题:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>正如下面的 `标题`_ 章节所说一样。
+</pre></div>
+</div>
+<p>正如下面的 <a class="reference internal" href="#sections">Sections</a> 章节所说一样。</p>
+<p>Internal linking is also done via a special reStructuredText role provided by Sphinx,
+see the section on specific markup,
+<a class="reference external" href="https://www.sphinx-doc.org/zh-cn/master/usage/referencing.html#ref-role">交叉引用任意位置</a> .</p>
+</section>
+</section>
+<section id="sections">
+<h2>Sections<a class="headerlink" href="#sections" title="Permalink to this heading">#</a></h2>
+<p>标题是划分章节的依据。将单行文本缀以下划符号则构成标题。
+可用的符号有 <code class="docutils literal notranslate"><span class="pre">#=-~:'&quot;^_*+&lt;&gt;</span></code>，以及反引号。
+需要满足长度条件：下划符号的数目与标题文本一致，（中文这类宽字符算两个字符）。</p>
+<p>章节的大小关系与符号无关，只与符号出现的顺序有关。一般来讲，习惯用 <code class="docutils literal notranslate"><span class="pre">#</span></code> 做一级标题，<code class="docutils literal notranslate"><span class="pre">=</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code> 分别做 二、三 级标题。</p>
+<p>并且，可以使用双划线:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">##########</span>
+<span class="n">双划线风格</span>
+<span class="c1">##########</span>
+
+<span class="n">单划线风格</span>
+<span class="o">==========</span>
+</pre></div>
+</div>
+<p>标题本身会提供一个锚点，可以使用 <a class="reference internal" href="#internal-links">Internal links</a> 的方式来指向本文的一个章节，就是上面 <a class="reference internal" href="#internal-links">Internal links</a> 章节说的。</p>
+<p>另外，任何四个以上的重复横线将会渲染为分割线:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">----</span>
+</pre></div>
+</div>
+<p>效果：</p>
+</section>
+<hr class="docutils" />
+<section id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">contents</span></code> 指令可以自动生成目录，可以在任何地方使用，但是一般放在文档的开头:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">contents</span><span class="p">::</span>
+</pre></div>
+</div>
+<p>可接受以下选项：</p>
+<dl class="simple">
+<dt>depth</dt><dd><p>整数，设置目录层级深度，默认无限。</p>
+</dd>
+<dt>local</dt><dd><p>如果提供，则会生成该章节以及子章节的目录而非全篇目录。</p>
+</dd>
+<dt>backlinks</dt><dd><p>是否生成目录项和文档项之间的链接。</p>
+</dd>
+</dl>
+</section>
+<section id="field-lists">
+<h2>Field Lists<a class="headerlink" href="#field-lists" title="Permalink to this heading">#</a></h2>
+<p>字段列表是这样标记的字段序列:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">fieldname</span><span class="p">:</span> <span class="n">Field</span> <span class="n">content</span>
+</pre></div>
+</div>
+<p>效果:</p>
+<dl class="field-list simple">
+<dt class="field-odd">fieldname<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Field content</p>
+</dd>
+</dl>
+<p>它们通常在Python文档中使用:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">my_arg</span><span class="p">,</span> <span class="n">my_other_arg</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A function just for me.</span>
+
+<span class="sd">    :param my_arg: The first of my arguments.</span>
+<span class="sd">    :param my_other_arg: The second of my arguments.</span>
+
+<span class="sd">    :returns: A message (just for me, of course).</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>效果:</p>
+<dl>
+<dt>def my_function(my_arg, my_other_arg):</dt><dd><p>&quot;&quot;&quot;A function just for me.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param my_arg<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The first of my arguments.</p>
+</dd>
+<dt class="field-even">param my_other_arg<span class="colon">:</span></dt>
+<dd class="field-even"><p>The second of my arguments.</p>
+</dd>
+<dt class="field-odd">returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A message (just for me, of course).</p>
+</dd>
+</dl>
+<p>&quot;&quot;&quot;</p>
+</dd>
+</dl>
+<p>Sphinx extends standard docutils behavior and intercepts field lists specified
+at the beginning of documents.  Refer to <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/field-lists.html">field-lists</a>
+for more information.</p>
+</section>
+<section id="pictures">
+<span id="rst-pictures"></span><h2>Pictures<a class="headerlink" href="#pictures" title="Permalink to this heading">#</a></h2>
+<p>插入图像可以使用 <cite>image</cite> 或 <cite>figure</cite> 指令。</p>
+<p>image 属于直接插入图片用的，而 figure 则可以添加更详细的描述。</p>
+<p>Sphinx会自动将图像文件复制到构建的输出目录的子目录中
+(例如，用于HTML输出的 <code class="docutils literal notranslate"><span class="pre">_static</span></code> 目录。)</p>
+<p>image 接受一个参数：图像的 Uri，如果是相对路径，则起点是当前文档，绝对路径的根为source。
+image 可接受零个或多个选项，可选的选项有：</p>
+<dl class="simple">
+<dt>height</dt><dd><p>图像高度，单位见下方表格。</p>
+</dd>
+<dt>width</dt><dd><p>图像宽度，同上。</p>
+</dd>
+<dt>scale</dt><dd><p>图像缩放，使用百分比。</p>
+</dd>
+<dt>align</dt><dd><p>可以是以下值之一：<em>top</em>, <em>middle</em>, <em>bottom</em>, <em>left</em>, <em>center</em>, <em>right</em>，设置图像对齐方式。</p>
+</dd>
+<dt>target</dt><dd><p>如果设置，需要传入一个超链接靶标。这会让图片可点击，点击后跳转到靶标。
+对于 HTML，是将 img 元素放在了 a 元素内部。</p>
+</dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">image</span><span class="p">::</span> <span class="n">img</span><span class="o">/</span><span class="n">test</span><span class="o">.</span><span class="n">jpg</span>
+    <span class="p">:</span><span class="n">height</span><span class="p">:</span> <span class="mi">400</span><span class="n">px</span>
+    <span class="p">:</span><span class="n">width</span><span class="p">:</span> <span class="mi">600</span><span class="n">px</span>
+    <span class="p">:</span><span class="n">scale</span><span class="p">:</span> <span class="mi">50</span><span class="o">%</span>
+    <span class="p">:</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span>
+    <span class="p">:</span><span class="n">target</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">docutils</span><span class="o">.</span><span class="n">sourceforge</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">ref</span><span class="o">/</span><span class="n">rst</span><span class="o">/</span><span class="n">directives</span><span class="o">.</span><span class="n">html</span><span class="c1">#image</span>
+</pre></div>
+</div>
+<a class="reference external image-reference" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#image"><img alt="../_images/test.jpg" class="align-center" src="../_images/test.jpg" style="width: 300.0px; height: 200.0px;" /></a>
+<hr class="docutils" />
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Unit</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>em</p></td>
+<td><p>the element's font size</p></td>
+</tr>
+<tr class="row-odd"><td><p>ex</p></td>
+<td><p>x-height of the element's font</p></td>
+</tr>
+<tr class="row-even"><td><p>ch</p></td>
+<td><p>width of the “0” (ZERO, U+0030) glyph in the element’s font</p></td>
+</tr>
+<tr class="row-odd"><td><p>rem</p></td>
+<td><p>font size of the root element</p></td>
+</tr>
+<tr class="row-even"><td><p>vw</p></td>
+<td><p>1% of the viewport (or paper) width</p></td>
+</tr>
+<tr class="row-odd"><td><p>vh</p></td>
+<td><p>1% of the viewport (or paper) height</p></td>
+</tr>
+<tr class="row-even"><td><p>vmin</p></td>
+<td><p>1% of the viewport’s smaller dimension</p></td>
+</tr>
+<tr class="row-odd"><td><p>vmax</p></td>
+<td><p>1% of the viewport’s larger dimension</p></td>
+</tr>
+<tr class="row-even"><td><p>cm</p></td>
+<td><p>centimeters
+1 cm = 10 mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>mm</p></td>
+<td><p>millimeters          |
+1 mm = 1/1000 m</p></td>
+</tr>
+<tr class="row-even"><td><p>Q</p></td>
+<td><p>quarter-millimeters  |
+1 Q = 1/4 mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>in</p></td>
+<td><p>inches               |
+1 in = 25.4 mm = 96 px</p></td>
+</tr>
+<tr class="row-even"><td><p>pc</p></td>
+<td><p>picas                |
+1 pc = 1/6 in = 12 pt</p></td>
+</tr>
+<tr class="row-odd"><td><p>pt</p></td>
+<td><p>points               |
+1 pt = 1/72 in</p></td>
+</tr>
+<tr class="row-even"><td><p>px</p></td>
+<td><p>pixels               |
+1 px = 3/4 pt = 1/96 in</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<p>figure 由 image 和一段标题（一个单行段落），以及可选的图例组成。
+对于基于页的媒体（如PDF），在排版时，figure 可能会浮动到合适的地方。</p>
+<p>figure 拥有 image 所有的选项，在以下几处有所不同：</p>
+<dl>
+<dt>align</dt><dd><p>可传入 <em>left</em>, <em>center</em>, <em>right</em>。
+只能设置水平方向上的对齐方式。</p>
+</dd>
+<dt>figwidth</dt><dd><p>设置图像宽度，这将影响图像标题和图例的折行方式，以确保它们的宽度不会超过这个值。
+但是这并不影响内嵌的图片宽度，图片的宽度需要用 width 选项设置:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">+---------------------------+</span>
+<span class="o">|</span>        <span class="n">figure</span>             <span class="o">|</span>
+<span class="o">|</span>                           <span class="o">|</span>
+<span class="o">|&lt;------</span> <span class="n">figwidth</span> <span class="o">---------&gt;|</span>
+<span class="o">|</span>                           <span class="o">|</span>
+<span class="o">|</span>  <span class="o">+---------------------+</span>  <span class="o">|</span>
+<span class="o">|</span>  <span class="o">|</span>     <span class="n">image</span>           <span class="o">|</span>  <span class="o">|</span>
+<span class="o">|</span>  <span class="o">|</span>                     <span class="o">|</span>  <span class="o">|</span>
+<span class="o">|</span>  <span class="o">|&lt;---</span> <span class="n">width</span> <span class="o">---------&gt;|</span>  <span class="o">|</span>
+<span class="o">|</span>  <span class="o">+---------------------+</span>  <span class="o">|</span>
+<span class="o">|</span>                           <span class="o">|</span>
+<span class="o">|</span><span class="n">The</span> <span class="n">figure</span><span class="s1">&#39;s caption should|</span>
+<span class="o">|</span><span class="n">wrap</span> <span class="n">at</span> <span class="n">this</span> <span class="n">width</span><span class="o">.</span>        <span class="o">|</span>
+<span class="o">+---------------------------+</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. figure:: img/test.jpg
+    :height: 400px
+    :width: 600px
+    :scale: 50%
+    :align: center
+    :target: https://docutils.sourceforge.io/docs/ref/rst/directives.html#image
+
+    けだまつり ｜ 玉之けだま
+</pre></div>
+</div>
+<figure class="align-center" id="id8">
+<a class="reference external image-reference" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#image"><img alt="../_images/test.jpg" src="../_images/test.jpg" style="width: 300.0px; height: 200.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">けだまつり ｜ 玉之けだま</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="footnotes">
+<h2>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this heading">#</a></h2>
+<p>对于脚注（ref），使用 <code class="docutils literal notranslate"><span class="pre">[#name]_</span></code> 标记脚注位置，并在“脚注”标题后添加脚注主体在文档底部，像这样:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Lorem</span> <span class="n">ipsum</span> <span class="p">[</span><span class="c1">#f1]_ dolor sit amet ... [#f2]_</span>
+
+<span class="o">..</span> <span class="n">rubric</span><span class="p">::</span> <span class="n">Footnotes</span>
+
+<span class="o">..</span> <span class="p">[</span><span class="c1">#f1] Text of the first footnote.</span>
+<span class="o">..</span> <span class="p">[</span><span class="c1">#f2] Text of the second footnote.</span>
+</pre></div>
+</div>
+<p>您还可以明确编号脚注 (<code class="docutils literal notranslate"><span class="pre">[1]_</span></code>) 或使用不带名字的自动编号脚注 (<code class="docutils literal notranslate"><span class="pre">[#]_</span></code>)。</p>
+<p>效果：</p>
+<p>Lorem ipsum <a class="footnote-reference brackets" href="#f1" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> dolor sit amet ... <a class="footnote-reference brackets" href="#f2" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p>
+<p class="rubric">Footnotes</p>
+<aside class="footnote brackets" id="f1" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">1</a><span class="fn-bracket">]</span></span>
+<p>Text of the first footnote.</p>
+</aside>
+<aside class="footnote brackets" id="f2" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">2</a><span class="fn-bracket">]</span></span>
+<p>Text of the second footnote.</p>
+</aside>
+</section>
+<section id="citations">
+<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<p>Standard reStructuredText citations are supported,
+with the additional feature that they are &quot;global&quot;,
+i.e. all citations can be referenced from all files.  Use them like so:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Lorem</span> <span class="n">ipsum</span> <span class="p">[</span><span class="n">Ref</span><span class="p">]</span><span class="n">_</span> <span class="n">dolor</span> <span class="n">sit</span> <span class="n">amet</span><span class="o">.</span>
+
+<span class="o">..</span> <span class="p">[</span><span class="n">Ref</span><span class="p">]</span> <span class="n">Book</span> <span class="ow">or</span> <span class="n">article</span> <span class="n">reference</span><span class="p">,</span> <span class="n">URL</span> <span class="ow">or</span> <span class="n">whatever</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>引用用法类似于脚注用法，但标签不是数字或以 <code class="docutils literal notranslate"><span class="pre">＃</span></code> 开头。</p>
+<p>效果：</p>
+<p>Lorem ipsum <a class="reference internal" href="#ref" id="id7"><span>[Ref]</span></a> dolor sit amet.</p>
+<div role="list" class="citation-list">
+<div class="citation" id="ref" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">Ref</a><span class="fn-bracket">]</span></span>
+<p>Book or article reference, URL or whatever.</p>
+</div>
+</div>
+</section>
+<section id="admonitions">
+<span id="rst-admonitions"></span><h2>Admonitions<a class="headerlink" href="#admonitions" title="Permalink to this heading">#</a></h2>
+<p>reStructuredText 提供了一些段落级的标记指令，如：</p>
+<table class="hlist"><tr><td><ul class="simple">
+<li><p>attention</p></li>
+<li><p>caution</p></li>
+<li><p>danger</p></li>
+</ul>
+</td><td><ul class="simple">
+<li><p>error</p></li>
+<li><p>hint</p></li>
+<li><p>important</p></li>
+</ul>
+</td><td><ul class="simple">
+<li><p>note</p></li>
+<li><p>tip</p></li>
+</ul>
+</td><td><ul class="simple">
+<li><p>warning</p></li>
+<li><p>see also</p></li>
+</ul>
+</td></tr></table>
+<p>用来将传入的体元素表达为指定的语义:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. warning::
+
+    我警告你哦！╰（‵□′）╯
+</pre></div>
+</div>
+<p>效果：</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>我警告你哦！╰（‵□′）╯</p>
+</div>
+<p>比较通用的是 <code class="docutils literal notranslate"><span class="pre">admonition</span></code> 指令，上述指令可以看作是它的子类:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. admonition:: 要闻
+    :class: attention
+
+    其实没有什么要闻。
+</pre></div>
+</div>
+<p>效果：</p>
+<div class="attention admonition">
+<p class="admonition-title">要闻</p>
+<p>其实没有什么要闻。</p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">:class:</span></code> 其实可以不要：</p>
+<div class="admonition- admonition">
+<p class="admonition-title">要闻</p>
+<p>其实没有什么要闻。</p>
+</div>
+</section>
+<section id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this heading">#</a></h2>
+<p>单行注释:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">comment</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>多行注释:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>
+   <span class="n">This</span> <span class="n">whole</span> <span class="n">indented</span> <span class="n">block</span>
+   <span class="ow">is</span> <span class="n">a</span> <span class="n">comment</span><span class="o">.</span>
+
+   <span class="n">Still</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">comment</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="html-metadata">
+<span id="rst-html-meta"></span><h2>HTML Metadata<a class="headerlink" href="#html-metadata" title="Permalink to this heading">#</a></h2>
+<p>The meta directive allows specifying the HTML
+<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">metadata element</a> of a Sphinx documentation page.  For example, the
+directive:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">meta</span><span class="p">::</span>
+   <span class="p">:</span><span class="n">description</span><span class="p">:</span> <span class="n">The</span> <span class="n">Sphinx</span> <span class="n">documentation</span> <span class="n">builder</span>
+   <span class="p">:</span><span class="n">keywords</span><span class="p">:</span> <span class="n">Sphinx</span><span class="p">,</span> <span class="n">documentation</span><span class="p">,</span> <span class="n">builder</span>
+</pre></div>
+</div>
+<p>will generate the following HTML output:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;The Sphinx documentation builder&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;keywords&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Sphinx, documentation, builder&quot;</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>此外，Sphinx将按照元指令中指定的关键字添加到搜索索引中。因此，元元素的 <code class="docutils literal notranslate"><span class="pre">lang</span></code> 属性被考虑在内。例如，指令:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">meta</span><span class="p">::</span>
+   <span class="p">:</span><span class="n">keywords</span><span class="p">:</span> <span class="n">backup</span>
+   <span class="p">:</span><span class="n">keywords</span> <span class="n">lang</span><span class="o">=</span><span class="n">en</span><span class="p">:</span> <span class="n">pleasefindthiskey</span> <span class="n">pleasefindthiskeytoo</span>
+   <span class="p">:</span><span class="n">keywords</span> <span class="n">lang</span><span class="o">=</span><span class="n">de</span><span class="p">:</span> <span class="n">bittediesenkeyfinden</span>
+</pre></div>
+</div>
+<p>adds the following words to the search indices of builds with different language
+configurations:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pleasefindthiskey</span></code>, <code class="docutils literal notranslate"><span class="pre">pleasefindthiskeytoo</span></code> to <em>English</em> builds;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bittediesenkeyfinden</span></code> to <em>German</em> builds;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">backup</span></code> to builds in all languages.</p></li>
+</ul>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Sphinx 速查笔记</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="roles.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Roles</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paragraphs">Paragraphs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-markup">Inline markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#literal-blocks">Literal blocks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doctest-blocks">Doctest blocks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tables">Tables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hyperlinks">Hyperlinks</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#external-links">External links</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#internal-links">Internal links</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sections">Sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#field-lists">Field Lists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pictures">Pictures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#footnotes">Footnotes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#admonitions">Admonitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-metadata">HTML Metadata</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By SH_Youth
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, SH_Youth.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,1138 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="cn" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Directives &#8212; 最変態no文章存档</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Sphinx_Notes/directives';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="别的山上的石头" href="../Stone/index.html" />
+    <link rel="prev" title="Roles" href="roles.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="cn"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">最変態no文章存档</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    欢迎来到最変態no文章存档
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">目录：</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Criticism_Space/index.html">批评空间</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Criticism_Space/Kira-Kira/index.html">KIRA☆KIRA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Criticism_Space/YU-NO/index.html">在世界尽头咏唱恋曲的少女YU-NO</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Sphinx 速查笔记</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="reStructuredText%2B.html">reStructuredText+</a></li>
+<li class="toctree-l2"><a class="reference internal" href="roles.html">Roles</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Directives</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Stone/index.html">别的山上的石头</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Stone/anime_pic_imperfections/index.html">动漫视频常见的瑕疵/缺陷介绍</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/SH-Youth/SH_Archive_src" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/SH-Youth/SH_Archive_src/edit/main/Sphinx_Notes/directives.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Sphinx_Notes/directives.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Directives</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#versions-and-changes">Versions and Changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentational">Presentational</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#showing-code">Showing Code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#toctree">Toctree</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#include">Include</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raw">Raw</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#class">Class</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math">Math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#role">Role</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-metadata">HTML Metadata</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="directives">
+<h1>Directives<a class="headerlink" href="#directives" title="Permalink to this heading">#</a></h1>
+<p>A directive is a generic block of explicit markup.
+Along with roles, it is one of the extension mechanisms of reStructuredText,
+and Sphinx makes heavy use of it.</p>
+<p>基本用法:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">directive_type</span><span class="p">::</span> directive
+    <span class="nc">:option:</span> value
+
+    content
+</pre></div>
+</div>
+<p>Docutils supports the following directives:</p>
+<ul>
+<li><p>Admonitions: <code class="docutils literal notranslate"><span class="pre">attention</span></code>, <code class="docutils literal notranslate"><span class="pre">caution,</span></code> <code class="docutils literal notranslate"><span class="pre">danger</span></code>, <code class="docutils literal notranslate"><span class="pre">error</span></code>, <code class="docutils literal notranslate"><span class="pre">hint</span></code>,
+<code class="docutils literal notranslate"><span class="pre">important</span></code>, <code class="docutils literal notranslate"><span class="pre">note</span></code>, <code class="docutils literal notranslate"><span class="pre">tip</span></code>, <code class="docutils literal notranslate"><span class="pre">warning</span></code>.  (see also <a class="reference internal" href="reStructuredText%2B.html#rst-admonitions"><span class="std std-ref">Admonitions</span></a>)</p></li>
+<li><p>Images:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">image</span></code> (see also <a class="reference internal" href="reStructuredText%2B.html#rst-pictures"><span class="std std-ref">Pictures</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">figure</span></code> (see also <a class="reference internal" href="reStructuredText%2B.html#rst-pictures"><span class="std std-ref">Pictures</span></a>)</p></li>
+</ul>
+</li>
+<li><p>Additional body elements:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">contents</span></code> (本地，即仅当前文件，目录)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">container</span></code> (一个带有自定义类的容器，用于在HTML中生成外部 <code class="docutils literal notranslate"><span class="pre">&lt;div&gt;</span></code> )</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rubric</span></code> (与文档切片无关的标题)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">topic</span></code>, <code class="docutils literal notranslate"><span class="pre">sidebar</span></code> (突出显示的构成元素)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parsed-literal</span></code> (支持行内标记的文字块)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">epigraph</span></code> (带有可选归因线的块引用)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">highlights</span></code>, <code class="docutils literal notranslate"><span class="pre">pull-quote</span></code> (带有自己的类属性的块引号)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">compound</span></code> (复合段)</p></li>
+</ul>
+</li>
+<li><p>Special tables:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">table</span></code> (带标题的表格)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">csv-table</span></code> (从逗号分隔值生成的表)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">list-table</span></code> (从列表列表生成的表)</p></li>
+</ul>
+</li>
+<li><p>Special directives:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">raw</span></code> (include raw target-format markup)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">include</span></code> (include reStructuredText from another file) -- in Sphinx,
+when given an absolute include file path, this directive takes it as
+relative to the source directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">class</span></code> (assign a class attribute to the next element)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When the default domain contains a <code class="docutils literal notranslate"><span class="pre">class</span></code> directive, this directive
+will be shadowed.  Therefore, Sphinx re-exports it as <code class="docutils literal notranslate"><span class="pre">rst-class</span></code>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you want to add a class to a directive,
+you may consider the <code class="docutils literal notranslate"><span class="pre">:class:</span></code> <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#common-options">common option</a>
+instead, which is supported by most directives and allows for a more compact notation.</p>
+</div>
+</li>
+</ul>
+</li>
+<li><p>HTML specifics:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">meta</span></code>
+(generation of HTML <code class="docutils literal notranslate"><span class="pre">&lt;meta&gt;</span></code> tags, see also <a class="reference internal" href="reStructuredText%2B.html#rst-html-meta"><span class="std std-ref">HTML Metadata</span></a> below)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code> (override document title)</p></li>
+</ul>
+</li>
+<li><p>Influncing markup:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">default-role</span></code> (set the default interpreted text role)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">role</span></code> (define a new interpreted text role)</p></li>
+</ul>
+</li>
+</ul>
+<p>基本上，指令由名称、参数、选项和内容组成。看看这个例子:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">function</span><span class="p">::</span> foo(x)
+              foo(y, z)
+   <span class="nc">:module:</span> some.module.name
+
+   Return a line of text input from the user.
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">function</span></code> 是指令名称。这里给出了两个参数，第一行的其余部分和第二行，以及一个选项 <code class="docutils literal notranslate"><span class="pre">模块</span></code>
+（如你所见，选项在紧跟在参数后面的行中给出并由冒号表示）。选项必须缩进到与指令内容相同的级别。</p>
+<p>The directive content follows after a blank line and is indented relative to
+the directive start or if options are present, by the same amount as the
+options.</p>
+<p>Be careful as the indent is not a fixed number of whitespace, e.g. three, but
+any number whitespace.  This can be surprising when a fixed indent is used
+throughout the document and can make a difference for directives which are
+sensitive to whitespace. Compare:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span>
+    <span class="nc">:caption:</span> A cool example
+
+        The output of this line starts with four spaces.
+
+<span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span>
+
+    The output of this line has no spaces at the beginning.
+</pre></div>
+</div>
+<p>效果：</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">A cool example</span><a class="headerlink" href="#id3" title="Permalink to this code">#</a></div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>    The output of this line starts with four spaces.
+</pre></div>
+</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>The output of this line has no spaces at the beginning.
+</pre></div>
+</div>
+<p>In the first code block, the indent for the content was fixated by the option
+line to three spaces, consequently the content starts with four spaces.
+In the latter the indent was fixed by the content itself to seven spaces, thus
+it does not start with a space.</p>
+<section id="versions-and-changes">
+<h2>Versions and Changes<a class="headerlink" href="#versions-and-changes" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">versionadded::</span></code> version [brief explanation]</dt><dd><p>标记自某个特定版本开始添加的功能。
+例如:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">versionadded</span><span class="p">::</span> 1.0
+    Added the <span class="nv">`feature`</span> directive.
+</pre></div>
+</div>
+<p>效果：</p>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 1.0: </span>Added the <cite>feature</cite> directive.</p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">versionchanged::</span></code> version [brief explanation]</dt><dd><p>标记自某个特定版本开始更改的功能。
+例如:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">versionchanged</span><span class="p">::</span> 1.0
+    The <span class="nv">`feature`</span> directive now supports the <span class="nv">`option`</span> argument.
+</pre></div>
+</div>
+<p>效果：</p>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.0: </span>The <cite>feature</cite> directive now supports the <cite>option</cite> argument.</p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">deprecated::</span></code> version [brief explanation]</dt><dd><p>标记自某个特定版本开始弃用的功能。
+例如:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">deprecated</span><span class="p">::</span> 1.0
+    The <span class="nv">`feature`</span> directive is deprecated.
+</pre></div>
+</div>
+<p>效果：</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated since version 1.0: </span>The <cite>feature</cite> directive is deprecated.</p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">versionremoved::</span></code> version [brief explanation]</dt><dd><p>标记自某个特定版本开始移除的功能。这项指令在version 7.3中被加入，目前此主题无法渲染。
+例如:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">versionremoved</span><span class="p">::</span> 1.0
+    The <span class="nv">`feature`</span> directive has been removed.
+</pre></div>
+</div>
+</dd>
+</dl>
+</section>
+<section id="presentational">
+<h2>Presentational<a class="headerlink" href="#presentational" title="Permalink to this heading">#</a></h2>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">rubric::</span></code> 指令用于在文档中添加一个类似标题（heading）的rubric，不会影响文档的结构。</dt><dd><p class="rubric">Options</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">:class:</span></code> <em>class names (a list of class names, separated by spaces)</em></dt><dd><p>Assign class attributes. This is a common option.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:name:</span></code> <em>label (text)</em></dt><dd><p>An implicit target name that can be referenced using ref. This is a common option.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:heading-level:</span></code> <em>n (number from 1 to 6)</em></dt><dd><p>Added in version 7.4.1.</p>
+<p>Use this option to specify the heading level of the rubric.
+In this case the rubric will be rendered as &lt;h1&gt; to &lt;h6&gt; for HTML output,
+or as the corresponding non-numbered sectioning command for LaTeX.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<hr class="docutils" />
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">hlist::</span></code> 指令用于一个包含水平维度的列表</dt><dd><p class="rubric">Options</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">:columns:</span></code> <em>n (int)</em></dt><dd><p>The number of columns; defaults to 2. For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">hlist</span><span class="p">::</span>
+    <span class="nc">:columns:</span> 3
+
+    <span class="m">*</span> A list of
+    <span class="m">*</span> short items
+    <span class="m">*</span> that should be
+    <span class="m">*</span> displayed
+    <span class="m">*</span> horizontally
+</pre></div>
+</div>
+<p>效果：</p>
+<table class="hlist"><tr><td><ul class="simple">
+<li><p>A list of</p></li>
+<li><p>short items</p></li>
+</ul>
+</td><td><ul class="simple">
+<li><p>that should be</p></li>
+<li><p>displayed</p></li>
+</ul>
+</td><td><ul class="simple">
+<li><p>horizontally</p></li>
+</ul>
+</td></tr></table>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="showing-code">
+<span id="rst-showing-code"></span><h2>Showing Code<a class="headerlink" href="#showing-code" title="Permalink to this heading">#</a></h2>
+<p>There are multiple ways to show syntax-highlighted literal code blocks in Sphinx:</p>
+<ul class="simple">
+<li><p>using <a class="reference internal" href="reStructuredText%2B.html#rst-doctest-blocks"><span class="std std-ref">reStructuredText doctest blocks</span></a>;</p></li>
+<li><p>using <a class="reference internal" href="reStructuredText%2B.html#rst-literal-blocks"><span class="std std-ref">reStructuredText literal blocks</span></a>,
+optionally in combination with the <code class="docutils literal notranslate"><span class="pre">highlight</span></code> directive;</p></li>
+<li><p>using the <code class="docutils literal notranslate"><span class="pre">code-block</span></code> directive;</p></li>
+<li><p>using the <code class="docutils literal notranslate"><span class="pre">literalinclude</span></code> directive.</p></li>
+</ul>
+<p>In all cases, Syntax highlighting is provided by <a class="reference external" href="https://pygments.org/">Pygments</a>.
+When using literal blocks, this is configured using any <code class="docutils literal notranslate"><span class="pre">highlight</span></code> directives in the source file.
+When a <code class="docutils literal notranslate"><span class="pre">highlight</span></code> directive is encountered, it is used until the next highlight directive is encountered.
+If there is no <code class="docutils literal notranslate"><span class="pre">highlight</span></code> directive in the file, the global highlighting language is used.
+This defaults to <code class="docutils literal notranslate"><span class="pre">python</span></code> but can be configured using the <code class="docutils literal notranslate"><span class="pre">highlight_language</span></code> config value in <code class="docutils literal notranslate"><span class="pre">config.py</span></code>.</p>
+<p>The following values are supported:</p>
+<ul class="simple">
+<li><p>none (no highlighting)</p></li>
+<li><p>default (similar to <code class="docutils literal notranslate"><span class="pre">python3</span></code> but with a fallback to <code class="docutils literal notranslate"><span class="pre">none</span></code> without warning highlighting fails; the default when <code class="docutils literal notranslate"><span class="pre">highlight_language</span></code> isn’t set)</p></li>
+<li><p>guess (let Pygments guess the lexer based on contents, only works with certain well-recognizable languages)</p></li>
+<li><p>python</p></li>
+<li><p>rest</p></li>
+<li><p>c</p></li>
+<li><p>… and any other <a class="reference external" href="https://pygments.org/docs/lexers">lexer alias that Pygments supports</a></p></li>
+</ul>
+<hr class="docutils" />
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">..highlight::</span></code> language</dt><dd><p>用于设置 <a class="reference internal" href="reStructuredText%2B.html#rst-literal-blocks"><span class="std std-ref">Literal blocks</span></a> 高亮显示代码块。 例如:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">highlight</span><span class="p">::</span> python
+</pre></div>
+</div>
+<p>这一语言会一直使用直到下一个 <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">highlight::</span></code> 指令出现。</p>
+<p class="rubric">Options</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">:linenothreshold:</span></code> <em>n (int)</em></dt><dd><p>超过这个行数的代码块将会显示行号。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:force:</span></code> <em>(no value)</em></dt><dd><p>If given, minor errors on highlighting are ignored.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<hr class="docutils" />
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">code-block::</span></code> [language]</dt><dd><p>与 <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">code::</span></code> 及 <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">sourcecode::</span></code> 没什么太大的区别，都用于显示代码块。</p>
+<p>例如:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">python</span>
+
+    <span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
+        <span class="s2">&quot;just a test&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">:linenos:</span></code> <em>(no value)</em></dt><dd><p>启动代码块显示行号。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:lineno-start:</span></code> <em>number (number)</em></dt><dd><p>设置行号的起始值。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:emphasize-lines:</span></code> <em>line numbers (comma separated numbers)</em></dt><dd><p>突出显示指定行。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:force:</span></code> <em>(no value)</em></dt><dd><p>忽略高亮显示代码块时的小错误。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:caption:</span></code> <em>text (text)</em></dt><dd><p>为代码块添加标题。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:name:</span></code> <em>label (text)</em></dt><dd><p>为代码块添加一个可被 <code class="docutils literal notranslate"><span class="pre">ref</span></code> 引用的标靶名。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:class:</span></code> <em>class names (a list of class names, separated by spaces)</em></dt><dd><p>为代码块添加CSS样式。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:dedent:</span></code> <em>number (number or no value)</em></dt><dd><p>删除代码块中的缩进字符，可以是一个数字，也可以是没有值，没有值时空格将由 <code class="xref py py-func docutils literal notranslate"><span class="pre">textwrap.dedent()</span></code> （见 <a class="reference external" href="https://docs.python.org/3/library/textwrap.html#textwrap.dedent">python3.13</a> ）
+自动删除。</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<hr class="docutils" />
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">literalinclude::</span></code> filename</dt><dd><p>从文件中导入代码块。文件名一般是相对于当前文件的路径，当若要用绝对路径，根目录为顶层的source dierctory。</p>
+<p class="rubric">Options</p>
+<p>详情见 <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude">sphinx 文档</a> 。</p>
+</dd>
+</dl>
+</section>
+<section id="toctree">
+<h2>Toctree<a class="headerlink" href="#toctree" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">toctree::</span></code> 是一个sphinx特有的指令，用于生成目录。 通常用于生成文档的主目录。例如:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+   <span class="nc">:maxdepth:</span> 2
+   <span class="nc">:caption:</span> 目录:
+
+   introduction
+   usage
+   advanced
+</pre></div>
+</div>
+<p>其中 content 为文件名，不带扩展名，相对于当前文件的路径。</p>
+<p class="rubric">Options</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">:class:</span></code> <em>class names (a list of class names, separated by spaces)</em></dt><dd><p>为目录元素添加CSS样式，这是一个 <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#common-options">common option</a> 。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:name:</span></code> <em>label (text)</em></dt><dd><p>为目录元素添加一个可被 <code class="docutils literal notranslate"><span class="pre">ref</span></code> 引用的标靶名，这是一个 <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#common-options">common option</a> 。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:caption:</span></code> <em>(text)</em></dt><dd><p>为目录添加一个标题。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:numbered:</span></code> <em>depth (integer)</em></dt><dd><p>为目录元素添加编号。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:maxdepth:</span></code> <em>level (integer)</em></dt><dd><p>限制目录的深度。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:hidden:</span></code></dt><dd><p>隐藏目录。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:glob:</span></code></dt><dd><p>使用通配符匹配 <code class="docutils literal notranslate"><span class="pre">*</span></code> 文件名。
+例如： <code class="docutils literal notranslate"><span class="pre">intro*</span></code> 匹配所有以 <code class="docutils literal notranslate"><span class="pre">intro</span></code> 开头的文件。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:includehidden:</span></code></dt><dd><p>包括隐藏的文件。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:titlesonly:</span></code></dt><dd><p>只显示标题。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:includehidden:</span></code></dt><dd><p>包括隐藏的文件。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:titlesonly:</span></code></dt><dd><p>只显示文档标题（titles），不显示其他同级标题（heading）。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:reversed:</span></code></dt><dd><p>反转目录。</p>
+</dd>
+</dl>
+</section>
+<section id="include">
+<h2>Include<a class="headerlink" href="#include" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">include::</span></code> 指令可以将外部文档导入进来。</p>
+<p>将外部文档作为 reStructuredText 导入，使用相同的渲染方式:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">include</span><span class="p">::</span> path/to/document.rst
+</pre></div>
+</div>
+<p>相对路径的起点是当前文档所在的文件夹。</p>
+<p class="rubric">Options</p>
+<dl class="simple">
+<dt>start-line</dt><dd><p>整数，从文件的第几行开始读取。 和 Python 一样，第一行的索引值是 0 。</p>
+</dd>
+<dt>end-line</dt><dd><p>整数，到文件的第几行结束。 第一行零。</p>
+</dd>
+<dt>start-after</dt><dd><p>字符串，将从文件中第一次找到的指定字符串后开始读取。</p>
+</dd>
+<dt>end-before</dt><dd><p>字符串，将在文件中第一次找到的指定字符串前结束。</p>
+</dd>
+<dt>encoding</dt><dd><p>字符编码。</p>
+</dd>
+<dt>literal</dt><dd><p>是否以纯文本字面量的形式导入。</p>
+</dd>
+<dt>code</dt><dd><p>输入 Pygments 支持的分词器名，以指定语言的词法规则将导入内容格式化。</p>
+</dd>
+<dt>number-lines</dt><dd><p>整数。设置第一样的行号。仅在 literal 或 code 选项被设置时工作。</p>
+</dd>
+<dt>tab-width</dt><dd><p>整数。设置制表符所渲染的空格的数目。仅在 literal 或 code 选项被设置时工作。</p>
+</dd>
+</dl>
+</section>
+<section id="raw">
+<span id="rst-directive-raw"></span><h2>Raw<a class="headerlink" href="#raw" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">raw::</span></code> 指令将其内容在指定的输出格式下原样传递给输出:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">raw</span><span class="p">::</span> html
+
+    &lt;hr width=50 size=10&gt;
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="simple">
+<dt>file</dt><dd><p>从文件系统中读取内容。</p>
+</dd>
+<dt>url</dt><dd><p>从网络读取内容。</p>
+</dd>
+<dt>encoding</dt><dd><p>外部内容的字符编码。</p>
+</dd>
+</dl>
+<p>另外可参考 <a class="reference internal" href="roles.html#rst-role-raw"><span class="std std-ref">Raw</span></a> 角色。</p>
+</section>
+<section id="class">
+<h2>Class<a class="headerlink" href="#class" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">class::</span></code> 指令用于声明其内容或接下来的内容的类型。 对于 HTML 输出而言，这会在其内容的 class 属性中添加指定的名称。</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">class</span><span class="p">::</span> special
+
+一个『特殊的』段落。
+
+<span class="p">..</span> <span class="ow">class</span><span class="p">::</span> exceptional remarkable
+
+<span class="gh">一个『例外』的章节</span>
+<span class="gh">==================</span>
+
+这是个普通段落。
+
+<span class="p">..</span> <span class="ow">class</span><span class="p">::</span> multiple
+
+    如果要传递内容，那么需要是体元素。
+    比如一个或多个段落。
+
+    这是第二段。
+</pre></div>
+</div>
+<p>上面的渲染效果用一段伪 XML 来表示:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;paragraph classes=&quot;special&quot;&gt;</span>
+    一个『特殊的』段落。
+<span class="nt">&lt;section classes=&quot;exceptional remarkable&quot;&gt;</span>
+    &lt;title&gt;
+        一个『例外』的章节
+    &lt;paragraph&gt;
+        这是个普通段落。
+    &lt;paragraph classes=&quot;multiple&quot;&gt;
+        如果要传递内容，那么需要是体元素。比如一个或多个段落。
+    &lt;paragraph classes=&quot;multiple&quot;&gt;
+        这是第二段。
+</pre></div>
+</div>
+</section>
+<section id="glossary">
+<h2>Glossary<a class="headerlink" href="#glossary" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">glossary::</span></code> 指令用于定义术语表。</p>
+<p>This directive must contain a reStructuredText definition-list-like markup with terms and definitions.
+The definitions will then be referenceable with the <code class="docutils literal notranslate"><span class="pre">term</span></code> role.</p>
+<p>例子:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">glossary</span><span class="p">::</span>
+
+environment
+    A structure where information about all documents under the root is
+    saved, and used for cross-referencing.  The environment is pickled
+    after the parsing stage, so that successive runs only need to read
+    and parse new and changed documents.
+
+source directory
+    The directory which, including its subdirectories, contains all
+    source files for one Sphinx project.
+</pre></div>
+</div>
+<p>效果：</p>
+<dl class="simple glossary">
+<dt id="term-environment">environment<a class="headerlink" href="#term-environment" title="Permalink to this term">#</a></dt><dd><p>A structure where information about all documents under the root is
+saved, and used for cross-referencing.  The environment is pickled
+after the parsing stage, so that successive runs only need to read
+and parse new and changed documents.</p>
+</dd>
+<dt id="term-source-directory">source directory<a class="headerlink" href="#term-source-directory" title="Permalink to this term">#</a></dt><dd><p>The directory which, including its subdirectories, contains all
+source files for one Sphinx project.</p>
+</dd>
+</dl>
+<p>不同于一般的定义列表，每个条目允许多个术语，术语中允许内联标记。你可以链接到所有的术语。例如:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">glossary</span><span class="p">::</span>
+
+    term 1
+    term 2
+        Definition of both terms.
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">:sorted:</span></code></dt><dd><p>Sort the entries alphabetically.</p>
+</dd>
+</dl>
+</section>
+<section id="math">
+<h2>Math<a class="headerlink" href="#math" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">math::</span></code> 指令用于在文档中插入数学公式。</p>
+<p>输入的数学语言是 LaTeX 标记。这是纯文本数学标记的事实标准，而且在构建 LaTeX 输出时不需要进一步的翻译。</p>
+<p>该指令支持多个等式，但需要用空行分隔:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">math</span><span class="p">::</span>
+
+    (a + b)^2 = a^2 + 2ab + b^2
+
+    (a - b)^2 = a^2 - 2ab + b^2
+</pre></div>
+</div>
+<p>效果：</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}(a + b)^2 = a^2 + 2ab + b^2\\(a - b)^2 = a^2 - 2ab + b^2\end{aligned}\end{align} \]</div>
+<p>此外，每个单独的等式都在一个分割环境中，
+这意味着你可以在一个等式中有多个对齐的行，用 <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> 对齐，用 <code class="docutils literal notranslate"><span class="pre">\\</span></code> 分隔:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">math</span><span class="p">::</span>
+
+    (a + b)^2  &amp;=  (a + b)(a + b) \\
+               &amp;=  a^2 + 2ab + b^2
+</pre></div>
+</div>
+<p>效果：</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}(a + b)^2  &amp;=  (a + b)(a + b) \\
+           &amp;=  a^2 + 2ab + b^2\end{split}\]</div>
+<p>当数学只有一行文本时，也可以作为指令参数给出:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">math</span><span class="p">::</span> (a + b)^2 = a^2 + 2ab + b^2
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">:class:</span></code> <em>class names (a list of class names, separated by spaces)</em></dt><dd><p>为数学公式添加CSS样式。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:name:</span></code> <em>label (text)</em></dt><dd><p>为数学公式添加一个可被 <code class="docutils literal notranslate"><span class="pre">ref</span></code> 引用的标靶名。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:label:</span></code> <em>label (text)</em></dt><dd><p>一般情况下，数学公式不会被编号。如果你想让你的公式获得一个编号，使用 <code class="docutils literal notranslate"><span class="pre">label</span></code> 选项。
+当使用时，它为等式选择一个内部标签，通过它可以进行交叉引用，并导致发出一个等式编号。
+参见 <a class="reference internal" href="roles.html#rst-role-math"><span class="std std-ref">eq</span></a> 角色的示例。编号样式取决于输出格式。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:nowrap:</span></code></dt><dd><p>阻止给定数学公式在数学环境中自动换行。当给出此选项时，你必须自己确保数学公式正确设置。例如:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">math</span><span class="p">::</span>
+    <span class="nc">:nowrap:</span>
+
+    \begin{eqnarray}
+        y    &amp; = &amp; ax^2 + bx + c \\
+        f(x) &amp; = &amp; x^2 + 2xy + y^2
+    \end{eqnarray}
+</pre></div>
+</div>
+<p>效果：</p>
+<div class="math notranslate nohighlight">
+\begin{eqnarray}
+    y    &amp; = &amp; ax^2 + bx + c \\
+    f(x) &amp; = &amp; x^2 + 2xy + y^2
+\end{eqnarray}</div></dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/math.html#math-support">Math support for HTML outputs in Sphinx</a></dt><dd><p>Rendering options for math with HTML builders.</p>
+</dd>
+<dt><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-latex_engine">latex_engine</a></dt><dd><p>Explains how to configure LaTeX builder to support Unicode literals in
+math mark-up.</p>
+</dd>
+</dl>
+</div>
+</section>
+<section id="role">
+<h2>Role<a class="headerlink" href="#role" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">role::</span></code> 指令用于创建一个新的角色。
+例如:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">role</span><span class="p">::</span> custom-role
+    <span class="nc">:class:</span> my-custom-class
+
+这是一个 <span class="na">:custom-role:</span><span class="nv">`自定义角色`</span> 的示例。
+</pre></div>
+</div>
+<p>然后在CSS文件中定义 <code class="docutils literal notranslate"><span class="pre">my-custom-class</span></code> 类的样式：</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">my-custom-class</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">lighter</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>定义必须在使用的前面。你还可以用一个括号来表达继承关系:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">role</span><span class="p">::</span> custom-role(strong)
+
+继承了<span class="na">:custom:</span><span class="nv">`强调`</span>。
+</pre></div>
+</div>
+<p>特例是 <code class="docutils literal notranslate"><span class="pre">raw</span></code> 角色，她不能直接只用，必须创建一个新角色来继承她，可见 <a class="reference internal" href="roles.html#rst-role-raw"><span class="std std-ref">Raw</span></a>:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">role</span><span class="p">::</span> html(raw)
+    <span class="nc">:format:</span> html
+
+在 HTML 中，将会渲染
+<span class="na">:raw-html:</span><span class="nv">`&lt;ruby&gt;&lt;rb&gt;拼&lt;/rb&gt;&lt;rt&gt;pin&lt;/rt&gt;&lt;rb&gt;音&lt;/rb&gt;&lt;rt&gt;yin&lt;/rt&gt;&lt;/ruby&gt;`</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">:class:</span></code> <em>class names (a list of class names, separated by spaces)</em></dt><dd><p>为角色添加CSS样式。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:format:</span></code> <em>space-separated list of output format names (writer names)</em></dt><dd><p>为角色指定输出格式，支持的格式见 <a class="reference external" href="https://docutils.sourceforge.io/docs/user/config.html#writer-docutils-application">writer names</a>。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">:language:</span></code> <em>text</em></dt><dd><p>设置高亮的代码名。</p>
+</dd>
+</dl>
+<hr class="docutils" />
+<p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">default-role::</span></code> 指令用于设置的解释文本角色的行为:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">default-role</span><span class="p">::</span> math
+
+现在是数学角色了： <span class="nv">`\LaTeX`</span>
+
+<span class="p">..</span> <span class="ow">default-role</span><span class="p">::</span> literal
+
+<span class="nv">`现在是字面量了`</span>
+</pre></div>
+</div>
+<p>效果：</p>
+<p>现在是数学角色了： <span class="math notranslate nohighlight">\(\LaTeX\)</span></p>
+<p><code class="docutils literal notranslate"><span class="pre">现在是字面量了</span></code></p>
+</section>
+<section id="html-metadata">
+<h2>HTML Metadata<a class="headerlink" href="#html-metadata" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">meta::</span></code> 指令允许指定 Sphinx 文档页面的 HTML <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">metadata element</a>。</p>
+<p>For example, the
+directive:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">meta</span><span class="p">::</span>
+   <span class="nc">:description:</span> The Sphinx documentation builder
+   <span class="nc">:keywords:</span> Sphinx, documentation, builder
+</pre></div>
+</div>
+<p>will generate the following HTML output:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;The Sphinx documentation builder&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;keywords&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Sphinx, documentation, builder&quot;</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>同样的，Sphinx 会根据 <code class="docutils literal notranslate"><span class="pre">meta</span></code> 指令中的 <code class="docutils literal notranslate"><span class="pre">lang</span></code> 属性将关键字添加到搜索索引中:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">meta</span><span class="p">::</span>
+   <span class="nc">:keywords:</span> backup
+   <span class="nc">:keywords lang=en:</span> pleasefindthiskey pleasefindthiskeytoo
+   <span class="nc">:keywords lang=de:</span> bittediesenkeyfinden
+</pre></div>
+</div>
+<p>这个例子将以下关键字添加到不同语言配置的构建的搜索索引中：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pleasefindthiskey</span></code>, <code class="docutils literal notranslate"><span class="pre">pleasefindthiskeytoo</span></code> to <em>English</em> builds;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bittediesenkeyfinden</span></code> to <em>German</em> builds;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">backup</span></code> to builds in all languages.</p></li>
+</ul>
+<hr class="docutils" />
+<p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">title::</span></code> 指令用于覆盖文档的标题。</p>
+<p>这个指令会以元数据的形式指定文档标题，不会成为文档主体的一部分。
+同时会覆盖文档提供的标题（ <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#document-title">document title</a> ）和 <code class="docutils literal notranslate"><span class="pre">title</span></code> 配置设置（ <a class="reference external" href="https://docutils.sourceforge.io/docs/user/config.html#title">&quot;title&quot; configuration setting</a> ）。</p>
+<p>例如:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">title</span><span class="p">::</span> New Sphinx Documentation Title
+</pre></div>
+</div>
+<p>可见标签页的标题会变成 <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Sphinx</span> <span class="pre">Documentation</span> <span class="pre">Title</span></code>。</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="roles.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Roles</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../Stone/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">别的山上的石头</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#versions-and-changes">Versions and Changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentational">Presentational</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#showing-code">Showing Code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#toctree">Toctree</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#include">Include</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raw">Raw</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#class">Class</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math">Math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#role">Role</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-metadata">HTML Metadata</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By SH_Youth
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, SH_Youth.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
