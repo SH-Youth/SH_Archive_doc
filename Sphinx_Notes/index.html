@@ -1,0 +1,649 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="cn" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Sphinx 速查笔记 &#8212; 最変態no文章存档</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Sphinx_Notes/index';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="reStructuredText+" href="reStructuredText%2B.html" />
+    <link rel="prev" title="在世界尽头咏唱恋曲的少女YU-NO" href="../Criticism_Space/YU-NO/index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="cn"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">最変態no文章存档</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    欢迎来到最変態no文章存档
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">目录：</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Criticism_Space/index.html">批评空间</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Criticism_Space/Kira-Kira/index.html">KIRA☆KIRA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Criticism_Space/YU-NO/index.html">在世界尽头咏唱恋曲的少女YU-NO</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Sphinx 速查笔记</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="reStructuredText%2B.html">reStructuredText+</a></li>
+<li class="toctree-l2"><a class="reference internal" href="roles.html">Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="directives.html">Directives</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Stone/index.html">别的山上的石头</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Stone/anime_pic_imperfections/index.html">动漫视频常见的瑕疵/缺陷介绍</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/SH-Youth/SH_Archive_src" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/SH-Youth/SH_Archive_src/edit/main/Sphinx_Notes/index.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Sphinx_Notes/index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Sphinx 速查笔记</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-and-quickstart">Installation and Quickstart</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda-install-sphinx">Conda Install Sphinx</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quickstart">Quickstart</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build">Build</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration">Configuration</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-information">Project Information</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-configuration">General Configuration</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="sphinx">
+<h1>Sphinx 速查笔记<a class="headerlink" href="#sphinx" title="Permalink to this heading">#</a></h1>
+<div class="admonition- admonition">
+<p class="admonition-title">编者按</p>
+<p>这大概是我边学边整理的，本来基本上是来自Sphinx文档中 <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">reStructuredText</a>
+的教程，但是实话实说那个写的确实一般，当我看得云里雾里的时候发现了 <a class="reference external" href="https://learn-rst.readthedocs.io/zh-cn/latest/index.html">Learn reStructureText</a>
+这个写得确实不错，所以之后很多内容都改成了融合二者的写法，总体上有所综合、
+有所精简、有所补充，便于快速查阅，并且基本上将文档中的很多代码的实际表现效果展示了出来</p>
+<p>一些我觉得有用的指令或者角色都单独写成了一节放在 <a class="reference internal" href="reStructuredText%2B.html#restructuredtext"><span class="std std-ref">reStructuredText+</span></a> ，还有一些我觉得也有点用的就放在指令和角色那一节里了。</p>
+<p>更多的细节在这里面找吧 <a class="reference external" href="https://docutils.sourceforge.io/docs/">https://docutils.sourceforge.io/docs/</a></p>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">其他章节：</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reStructuredText%2B.html">reStructuredText+</a></li>
+<li class="toctree-l1"><a class="reference internal" href="roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directives.html">Directives</a></li>
+</ul>
+</div>
+<section id="installation-and-quickstart">
+<h2>Installation and Quickstart<a class="headerlink" href="#installation-and-quickstart" title="Permalink to this heading">#</a></h2>
+<section id="conda-install-sphinx">
+<h3>Conda Install Sphinx<a class="headerlink" href="#conda-install-sphinx" title="Permalink to this heading">#</a></h3>
+<p>使用以下命令在conda中安装Sphinx</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda install sphinx
+</pre></div>
+</div>
+</section>
+<section id="quickstart">
+<h3>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this heading">#</a></h3>
+<p>使用以下命令快速创建一个新的Sphinx项目</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-quickstart
+</pre></div>
+</div>
+<p>按照提示进行配置即可</p>
+</section>
+<section id="build">
+<h3>Build<a class="headerlink" href="#build" title="Permalink to this heading">#</a></h3>
+<p><strong>使用 `sphinx-build` 命令构建文档</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-build -M html sourcedir builddir
+</pre></div>
+</div>
+<p>其中 <code class="docutils literal notranslate"><span class="pre">sourcedir</span></code> 是源文件目录， <code class="docutils literal notranslate"><span class="pre">builddir</span></code> 是构建目录，
+<code class="docutils literal notranslate"><span class="pre">-M</span></code> 选项可以选择 builder，常用的除了 <cite>html</cite> 外还有 <cite>latexpdf</cite> ，
+更多的builder可以查看 <a class="reference external" href="https://www.sphinx-doc.org/en/master/man/sphinx-build.html#cmdoption-sphinx-build-M">Sphinx sphinx-build 命令文档</a></p>
+<p><strong>使用 `make` 命令构建文档</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make html
+make latexpdf
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> 生成的 <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> 以及 <code class="docutils literal notranslate"><span class="pre">make.bat</span></code> 也可以用以构建文档。</p>
+<p><strong>使用 `sphinx-autobuild` 命令实时构建文档</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-autobuild sourcedir builddir
+</pre></div>
+</div>
+<p>这个命令会在本地启动一个服务器，实时监控源文件的变化并自动构建文档。可以边写边看效果，非常方便。</p>
+</section>
+</section>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">#</a></h2>
+<p>一个Sphinx项目的配置文件是 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> ，这个文件是一个Python脚本，用于配置Sphinx的各种选项。</p>
+<section id="project-information">
+<h3>Project Information<a class="headerlink" href="#project-information" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">project</span></code></dt><dd><p>项目的名称
+Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">project</span> <span class="o">=</span> <span class="s1">&#39;blog&#39;</span>
+</pre></div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">author</span></code></dt><dd><p>项目的作者
+Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">author</span> <span class="o">=</span> <span class="s1">&#39;SHY&#39;</span>
+</pre></div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">copyright</span></code></dt><dd><p>项目的版权声明</p>
+<p>允许的格式如下，其中 'YYYY' 代表一个四位数的年份。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">copyright</span> <span class="pre">=</span> <span class="pre">'YYYY'`</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">copyright</span> <span class="pre">=</span> <span class="pre">'YYYY,</span> <span class="pre">Author</span> <span class="pre">Name'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">copyright</span> <span class="pre">=</span> <span class="pre">'YYYY</span> <span class="pre">Author</span> <span class="pre">Name'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">copyright</span> <span class="pre">=</span> <span class="pre">'YYYY-YYYY,</span> <span class="pre">Author</span> <span class="pre">Name'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">copyright</span> <span class="pre">=</span> <span class="pre">'YYYY-YYYY</span> <span class="pre">Author</span> <span class="pre">Name'</span></code></p></li>
+</ul>
+<p>如果版权声明中包含 <code class="code docutils literal notranslate"><span class="pre">'%Y'</span></code> ，那么它会被替换为当前的四位数年份。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">copyright</span> <span class="pre">=</span> <span class="pre">'%Y'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">copyright</span> <span class="pre">=</span> <span class="pre">'%Y,</span> <span class="pre">Author</span> <span class="pre">Name'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">copyright</span> <span class="pre">=</span> <span class="pre">'YYYY-%Y,</span> <span class="pre">Author</span> <span class="pre">Name'</span></code></p></li>
+</ul>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">version</span></code></dt><dd><p>项目的主要版本号，可以用于替换 <code class="docutils literal notranslate"><span class="pre">|version|</span></code> 的默认值。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">release</span></code></dt><dd><p>项目的完整版本号，可以用于替换 <code class="docutils literal notranslate"><span class="pre">|release|</span></code> 的默认值。</p>
+</dd>
+</dl>
+</section>
+<section id="general-configuration">
+<h3>General Configuration<a class="headerlink" href="#general-configuration" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">extensions</span></code></dt><dd><p>一个列表，包含Sphinx扩展的名称。默认为空列表。
+这些拓展可以是Sphinx自带的（以 <code class="docutils literal notranslate"><span class="pre">sphinx.ext.*</span></code> 命名）或者自定义的第一方或第三方拓展。
+要使用第三方拓展，你必须确保它已经安装，并且在拓展列表中包含它。</p>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;sphinx.ext.todo&#39;</span><span class="p">,</span>
+    <span class="o">...</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.viewcode&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;numpydoc&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>使用第一方拓展有两种方式。配置文件本身可以是一个拓展；对于这种情况，你只需要在其中提供一个 <code class="docutils literal notranslate"><span class="pre">setup()</span></code> 函数。
+否则，你必须确保你的自定义拓展是可导入的，并且位于Python路径中的一个目录中。</p>
+<p>确保在修改 sys.path 时使用绝对路径。如果你的自定义拓展位于相对于配置目录的目录中，请使用 pathlib.Path.resolve() 如下所示：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s1">&#39;sphinxext&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()))</span>
+
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+<span class="o">...</span>
+<span class="s1">&#39;extname&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>路径结构如下：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docs/
+├── conf.py
+├── index.rst
+└── sphinxext/
+    └── extname.py
+</pre></div>
+</div>
+<p>更多关于拓展的信息请查看 <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/index.html">Sphinx 扩展文档</a></p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Criticism_Space/YU-NO/index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">在世界尽头咏唱恋曲的少女YU-NO</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="reStructuredText%2B.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">reStructuredText+</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-and-quickstart">Installation and Quickstart</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda-install-sphinx">Conda Install Sphinx</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quickstart">Quickstart</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build">Build</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration">Configuration</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-information">Project Information</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-configuration">General Configuration</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By SH_Youth
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, SH_Youth.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
