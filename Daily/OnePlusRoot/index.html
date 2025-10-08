@@ -385,7 +385,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#xposed">安装 Xposed 模块</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">结束</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">系统更新时保持 Root</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">结束</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changelog">ChangeLog</a></li>
 </ul>
             </nav>
         </div>
@@ -531,6 +533,12 @@ GKI 模式的 KernelSU 了。打开 KernelSU 管理器，可以看到 <code clas
 了 <code class="docutils literal notranslate"><span class="pre">工作中</span> <span class="pre">&lt;LKM&gt;</span></code>。</p>
 <p>不过这个 GKI 内核好像有点问题，读取不了电池电量，显示的是 0%，也不知道是是不是下的 Pre-release
 内核的缘故。反正我装的的 LKM 模式的 SukiSU，又不把它刷进去，装完重启手机就回到原本的内核了。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>求人不然求己，我之后用其他手机又试了一下，即使 KMI 版本完全一致，启动后还始终是显示
+<code class="docutils literal notranslate"><span class="pre">未安装</span></code>。还得是自己直接找到手机对应版本的全量包提取出 <code class="docutils literal notranslate"><span class="pre">init_boot.img</span></code> （内核版本大于等于 5.15）后直接用 SukiSU 管理器修补后，再 <code class="docutils literal notranslate"><span class="pre">fastboot</span> <span class="pre">flash</span> <span class="pre">init_boot</span></code> 刷进去。</p>
+<p>内核版本小于 5.15 的话则是用的 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code>。</p>
+</div>
 </section>
 </section>
 </section>
@@ -555,6 +563,7 @@ GKI 模式的 KernelSU 了。打开 KernelSU 管理器，可以看到 <code clas
 中安装即可。</p>
 <p>重启后在通知栏会有提示 <code class="docutils literal notranslate"><span class="pre">LSPosed</span> <span class="pre">已加载</span></code>，点击进入 LSPosed 马上把这烦人的通知关了，
 创建一个快捷方式在桌面。</p>
+<p>这个给是 <a class="reference external" href="https://github.com/LSPosed/LSPosed">老LSPosed</a>  停止维护后的 <a class="reference external" href="https://github.com/JingMatrix/LSPosed">新LSPosed</a></p>
 </section>
 <section id="xposed">
 <h3>安装 Xposed 模块<a class="headerlink" href="#xposed" title="Permalink to this heading">#</a></h3>
@@ -568,9 +577,27 @@ LSPosed 中启用即可。</p>
 里面把它们都冰封了算了。</p>
 </section>
 </section>
-<section id="id8">
-<h2>结束<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
+<section id="id10">
+<h2>系统更新时保持 Root<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h2>
+<p>OTA 下载安装后不要立即重启，而是先打开 SukiSU 在 <code class="docutils literal notranslate"><span class="pre">安装</span></code> 中选择 <code class="docutils literal notranslate"><span class="pre">安装到另一个槽位</span></code>，然后再重启手机即可。</p>
+<p>具体参考 <a class="reference external" href="https://sukisu.org/guide/installation#maintaining-root-after-ota-updates">SukiSU 官方文档</a> 。</p>
+</section>
+<section id="id11">
+<h2>结束<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h2>
 <p>姑且先写到这吧，未来还有什么折腾的在编辑更新。</p>
+</section>
+<section id="changelog">
+<h2>ChangeLog<a class="headerlink" href="#changelog" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>2025.08.08 发布</p></li>
+<li><p>2025.10.08 编辑</p>
+<ul>
+<li><p>添加修补原厂 <code class="docutils literal notranslate"><span class="pre">init_boot.img</span></code> / <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 的方法</p></li>
+<li><p>添加新 LSPosed 的信息</p></li>
+<li><p>添加系统更新时保持 Root 的方法</p></li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
 
@@ -635,7 +662,9 @@ LSPosed 中启用即可。</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#xposed">安装 Xposed 模块</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">结束</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">系统更新时保持 Root</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">结束</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changelog">ChangeLog</a></li>
 </ul>
   </nav></div>
 
