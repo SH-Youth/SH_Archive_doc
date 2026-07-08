@@ -383,7 +383,16 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open">开启账户 Open</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#close">关闭账户 Close</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#commodity">声明通货 Commodity</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#transactions">交易 Transactions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#transactions">交易 Transactions</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#payee-narration">Payee &amp; Narration  收款人和说明</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#account-amount">Account Amount 过账</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#costs-prices">Costs &amp; Prices  成本和现价</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#balancing-transactions">平衡交易 Balancing Transactions</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#reducing-positions">减少仓位 Reducing Positions</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#tags">标签 Tags</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#links">链接 Links</a></li>
+</ul>
+</li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#balance-assertions">余额断言 Balance Assertions</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pad">填充 Pad</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">说明 Notes</a></li>
@@ -421,7 +430,7 @@ document.write(`
   <img src="/_static/icon/author.svg" style="height:1.5em; vertical-align:middle; margin-left:1em" alt="作者" title="作者"/>
   <span>SH_Youth</span>
   <img src="/_static/icon/time.svg" style="height:1.5em; vertical-align:middle; margin-left:1em;" alt="时间" title="时间"/>
-  <span>2026.06.19</span>
+  <span>2026.07.08</span>
 </div><img alt="访问量统计" class="align-right" src="https://moe-counter.saihentai.qzz.io/blog-daily-3/" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -529,9 +538,12 @@ Account Amount [{Cost}] [&#64; Price]
 <span class="n">Expenses</span><span class="p">:</span><span class="n">Restaurant</span>
 </pre></div>
 </div>
-<p><strong>Payee &amp; Narration  收款人和说明</strong></p>
+<section id="payee-narration">
+<h5>Payee &amp; Narration  收款人和说明<a class="headerlink" href="#payee-narration" title="Permalink to this heading">#</a></h5>
 <p>紧接着的就是 <code class="docutils literal notranslate"><span class="pre">Payee</span></code> 和 <code class="docutils literal notranslate"><span class="pre">Narration</span></code>，分别表示交易的付款方和交易的说明。 <code class="docutils literal notranslate"><span class="pre">Payee</span></code> 是可选的， <code class="docutils literal notranslate"><span class="pre">Narration</span></code> 也是可选的。你可以向上面的例子一样把两个字符串都写上，也可以只写一个，只写一个的话默认是 <code class="docutils literal notranslate"><span class="pre">Narration</span></code>。毕竟写收款方挺奇怪且麻烦的。如果你只想写 <code class="docutils literal notranslate"><span class="pre">Payee</span></code> 而不写 <code class="docutils literal notranslate"><span class="pre">Narration</span></code>，那得在 <code class="docutils literal notranslate"><span class="pre">Payee</span></code> 后面加上一个空字符串 <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> ，虽然大概率不会这样写的。</p>
-<p><strong>Account Amount 过账</strong></p>
+</section>
+<section id="account-amount">
+<h5>Account Amount 过账<a class="headerlink" href="#account-amount" title="Permalink to this heading">#</a></h5>
 <p>第一行指令后面跟着的几行过账（posting）也是差不多的，比较方便的一点是可以使用 `` ( ) * / - + `` 的算术表达式:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2014</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">05</span> <span class="o">*</span> <span class="s2">&quot;Costco&quot;</span> <span class="s2">&quot;Shopping for birthday&quot;</span>
 <span class="n">Liabilities</span><span class="p">:</span><span class="n">CreditCard</span><span class="p">:</span><span class="n">CapitalOne</span>         <span class="o">-</span><span class="mf">45.00</span>          <span class="n">USD</span>
@@ -541,7 +553,9 @@ Account Amount [{Cost}] [&#64; Price]
 </pre></div>
 </div>
 <p>另外可以看到，也是一样的可以省一个 amount 不写的，Beancount 会自动计算出剩余的金额来平衡交易。</p>
-<p><strong>Costs &amp; Prices  成本和现价</strong></p>
+</section>
+<section id="costs-prices">
+<h5>Costs &amp; Prices  成本和现价<a class="headerlink" href="#costs-prices" title="Permalink to this heading">#</a></h5>
 <p>每一条过账的 <code class="docutils literal notranslate"><span class="pre">Amount</span></code> 后面可以跟着一个可选的 <code class="docutils literal notranslate"><span class="pre">Cost</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">Price</span></code>，用来表示成本和现价。</p>
 <p>先来看现价，设计到不同通货的兑换的时候就会用到了，比如兑换货币的汇率，或者兑换股票的现价。可以用 <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> 来表示单价，用 <code class="docutils literal notranslate"><span class="pre">&#64;&#64;</span></code> 来表示总价。例子：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2012</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">03</span> <span class="o">*</span> <span class="s2">&quot;Transfer to account in Canada&quot;</span>
@@ -566,7 +580,9 @@ Account Amount [{Cost}] [&#64; Price]
 <span class="n">Income</span><span class="p">:</span><span class="n">ETrade</span><span class="p">:</span><span class="n">CapitalGains</span>  <span class="o">-</span><span class="mf">148.30</span> <span class="n">USD</span>
 </pre></div>
 </div>
-<p><strong>平衡交易 Balancing Transactions</strong></p>
+</section>
+<section id="balancing-transactions">
+<h5>平衡交易 Balancing Transactions<a class="headerlink" href="#balancing-transactions" title="Permalink to this heading">#</a></h5>
 <p>然而，复式记账的关键在于会计等式——必须确保每笔交易的过账金额之和为零。那么在有不同通货单位，有成本有价格的情况下又是这么样的呢？</p>
 <p>在讲计算的规则之前，先看一个简单明了的例子其实就大致可以理解了：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">YYYY</span><span class="o">-</span><span class="n">MM</span><span class="o">-</span><span class="n">DD</span>
@@ -583,7 +599,9 @@ Account Amount [{Cost}] [&#64; Price]
 <li><p>如果过账只有成本，则成本乘以通货单位数，并使用成本通货，得到该过账的最终金额。</p></li>
 <li><p>如果过账既有成本也有现价，则成本乘以通货单位数，并使用成本通货，得到该过账的最终金额。现价在这里被忽略了，但是他会在价格数据库中生成一个条目，之后的盈亏计算就可以看到用处了。</p></li>
 </ol>
-<p><strong>减少仓位 Reducing Positions</strong></p>
+</section>
+<section id="reducing-positions">
+<h5>减少仓位 Reducing Positions<a class="headerlink" href="#reducing-positions" title="Permalink to this heading">#</a></h5>
 <p>按成本持有的通货，即便是同一通货，如果持有的成本不同，也会被 Beancount 视为不同的。也即，未来的交易如果要卖出/减少这些通货（减仓），必须指定成本，明确到底指的是那一批成本的通货。</p>
 <p>有几种不同的方式指定到底要减哪一批通货，可以直接提供成本，也可以提供日期，还可以用标签检索（标签在下一小节讲）：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>; 假设建仓如下
@@ -620,7 +638,9 @@ Assets:ETrade:IVV               -35 IVV {}
 <span class="p">;</span><span class="n">option</span> <span class="s2">&quot;booking_method&quot;</span> <span class="s2">&quot;LIFO&quot;</span>
 </pre></div>
 </div>
-<p><strong>标签 Tags</strong></p>
+</section>
+<section id="tags">
+<h5>标签 Tags<a class="headerlink" href="#tags" title="Permalink to this heading">#</a></h5>
 <p>这个和很多社交平台的哈希标签是类似的，可以设置一个也可以设置多个，当然也可以不要。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2014</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">23</span> <span class="o">*</span> <span class="s2">&quot;Flight to Berlin&quot;</span> <span class="c1">#berlin-trip-2014</span>
 <span class="n">Expenses</span><span class="p">:</span><span class="n">Flights</span>              <span class="o">-</span><span class="mf">1230.27</span> <span class="n">USD</span>
@@ -631,7 +651,9 @@ Assets:ETrade:IVV               -35 IVV {}
 <span class="n">Liabilities</span><span class="p">:</span><span class="n">CreditCard</span>
 </pre></div>
 </div>
-<p><strong>链接 Links</strong></p>
+</section>
+<section id="links">
+<h5>链接 Links<a class="headerlink" href="#links" title="Permalink to this heading">#</a></h5>
 <p>链接可以看成是一种特殊的标签，用于将一组交易链接组合起来，比如将一组与特定发票相关的交易组合在一起。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2014</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">05</span> <span class="o">*</span> <span class="s2">&quot;Invoice for January&quot;</span> <span class="o">^</span><span class="n">invoice</span><span class="o">-</span><span class="n">pepe</span><span class="o">-</span><span class="n">studios</span><span class="o">-</span><span class="n">jan14</span>
 <span class="n">Income</span><span class="p">:</span><span class="n">Clients</span><span class="p">:</span><span class="n">PepeStudios</span>           <span class="o">-</span><span class="mf">8450.00</span> <span class="n">USD</span>
@@ -642,6 +664,7 @@ Assets:ETrade:IVV               -35 IVV {}
 <span class="n">Assets</span><span class="p">:</span><span class="n">AccountsReceivable</span>
 </pre></div>
 </div>
+</section>
 </section>
 <section id="balance-assertions">
 <h4>余额断言 Balance Assertions<a class="headerlink" href="#balance-assertions" title="Permalink to this heading">#</a></h4>
@@ -861,7 +884,16 @@ Assets:ETrade:IVV               -35 IVV {}
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open">开启账户 Open</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#close">关闭账户 Close</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#commodity">声明通货 Commodity</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#transactions">交易 Transactions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#transactions">交易 Transactions</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#payee-narration">Payee &amp; Narration  收款人和说明</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#account-amount">Account Amount 过账</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#costs-prices">Costs &amp; Prices  成本和现价</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#balancing-transactions">平衡交易 Balancing Transactions</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#reducing-positions">减少仓位 Reducing Positions</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#tags">标签 Tags</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#links">链接 Links</a></li>
+</ul>
+</li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#balance-assertions">余额断言 Balance Assertions</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pad">填充 Pad</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">说明 Notes</a></li>
